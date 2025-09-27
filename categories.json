@@ -1,33 +1,32 @@
 {
   "Feedstock": {
     "categories": [
-      "Diesel Fuels",
-      "Aldehydes",
-      "Aromatics",
+      "Alkanes",
+      "Lignin & Cellulose",
       "Fatty Acids & Esters",
       "Terpenes",
       "Plastic Waste",
-      "Process Gases",
-      "Sugars & Carbohydrates",
-      "Lignin & Cellulose",
-      "Heavy Olefins",
-      "Lignocellulosic Biomass",
-      "Reaction Intermediates",
-      "Organic Waste",
+      "Aromatics",
+      "Ketones",
       "Light Olefins",
-      "Synthesis Gas",
       "Catalysts & Additives",
+      "Heavy Olefins",
+      "Reaction Intermediates",
+      "Aviation Fuels",
+      "Vegetable Oils",
+      "Sugars & Carbohydrates",
       "Phenols",
       "Furanics",
-      "Reaction Mixtures",
-      "Waste Oils",
-      "Ketones",
-      "Aviation Fuels",
-      "Alkanes",
+      "Lignocellulosic Biomass",
+      "Diesel Fuels",
       "Alcohols",
-      "Algal Materials",
+      "Synthesis Gas",
       "Bio-crude Oils",
-      "Vegetable Oils"
+      "Organic Waste",
+      "Aldehydes",
+      "Waste Oils",
+      "Algal Materials",
+      "Process Gases"
     ],
     "items": {
       "Reaction Intermediates": [
@@ -36,9 +35,9 @@
         "Salicornia bigelovii oil",
         "C19-C38 n-paraffins",
         "Condensed product",
-        "Straight-run naphtha",
         "n-Pentadecane",
         "Middle East vacuum gas oil",
+        "n-Decane",
         "Water hyacinth",
         "Saw dust",
         "Ethylene",
@@ -48,26 +47,27 @@
         "Methyl laurate",
         "endo-Tetrahydrodicyclopentadiene",
         "Mixed C3",
+        "Straight-run naphtha",
         "Date seeds"
       ],
       "Fatty Acids & Esters": [
         "Oleic acid",
         "Mixed fatty acids",
-        "Kerosene-gas oil fraction",
         "Soy methyl ester",
         "Fatty acid methyl ester",
         "Nannochloropsis oceanica microalgae biodiesel",
         "Long-chain unsaturated fatty acid methyl esters",
+        "Polypropylene",
+        "Kerosene-gas oil fraction",
         "n-Hexane",
-        "RP-3 jet fuel",
         "High molecular weight Fischer-Tropsch paraffin mixture",
         "Palmitic acid",
         "Lauric acid",
         "Levulinic acid",
         "Fatty acid methyl esters",
-        "Polypropylene",
         "Cyclohexanone",
-        "Acetovanillone"
+        "Acetovanillone",
+        "Mixture of fatty acids (mainly oleic acid, linoleic acid, palmitic acid, stearic acid, etc.) – 10 g per run"
       ],
       "Alcohols": [
         "Ethanol",
@@ -97,7 +97,8 @@
         "Hydroxyalkylation/alkylation products",
         "alpha-Tetralone",
         "28/12 wt% acetic acid/butanoic acid aqueous solution mixture",
-        "5-Hydroxymethylfurfural"
+        "5-Hydroxymethylfurfural",
+        "Isophorone"
       ],
       "Vegetable Oils": [
         "Castor oil",
@@ -111,31 +112,31 @@
         "Aromatic-rich oil",
         "Jatropha oil",
         "Coconut oil",
-        "Hydrodeoxygenation product of castor oil",
-        "Chinese number 3 jet fuel",
-        "Camelina oil",
-        "Stearic acid",
-        "Waste soybean oil",
-        "Palm fatty acid distillate",
         "Squalane",
-        "Algae oil",
+        "Hydrodeoxygenation product of castor oil",
+        "Stearic acid",
+        "Camelina oil",
         "100% pure bio-oil",
         "50% bio-oil from pine sawdust",
+        "Chinese number 3 jet fuel",
         "Light FCC gasoline",
         "Light FCC naphtha fraction",
         "Thermally treated refined palm oil",
         "Refined palm kernel oil",
+        "Algae oil",
         "Degummed soybean oil",
         "n-Alkanes derived from degummed soybean oil",
         "Refined vegetable oil",
-        "Methyl oleate"
+        "Methyl oleate",
+        "Waste soybean oil",
+        "Palm fatty acid distillate"
       ],
       "Phenols": [
         "Isoeugenol",
         "2-Benzylphenol",
         "Phenol",
-        "Guaiacol",
         "Lignin-derived benzene",
+        "Guaiacol",
         "Eugenol",
         "4-Ethylphenol"
       ],
@@ -149,27 +150,28 @@
         "Hexadecane",
         "n-Octadecane",
         "n-Heptadecane",
-        "Glucose",
+        "Microalgae biodiesel",
         "Methylcyclohexane",
+        "RP-3 jet fuel",
         "100% kitchen waste oil",
-        "Light microalgal biodiesel",
         "n-Octacosane",
         "n-Hexatriacontane",
-        "Microalgal biodiesel",
-        "Microalgae biodiesel",
         "Bio-n-hexadecane",
         "C6 to C15 n-alkanes",
         "Propane",
         "Trimethylolpropane oleate",
-        "1,2-Diphenylethane"
+        "1,2-Diphenylethane",
+        "Glucose",
+        "Light microalgal biodiesel",
+        "Microalgal biodiesel"
       ],
       "Terpenes": [
         "Squalene",
-        "Limonene"
+        "Limonene",
+        "β-pinene"
       ],
       "Algal Materials": [
-        "Botryococcus braunii algae oil",
-        "n-Decane"
+        "Botryococcus braunii algae oil"
       ],
       "Lignocellulosic Biomass": [
         "Pine wood",
@@ -184,9 +186,9 @@
       "Plastic Waste": [
         "Low density polyethylene",
         "Polyethylene",
-        "Non-edible sunflower oil",
         "Low density polyethylene scrap",
         "Municipal plastic waste",
+        "Non-edible sunflower oil",
         "Polyethylene waste",
         "High density polyethylene",
         "Polycarbonate pellets",
@@ -210,8 +212,9 @@
       "Aromatics": [
         "Naphthalene",
         "Styrene",
+        "Acenaphthene",
         "Bio-crude",
-        "Acenaphthene"
+        "Benzene"
       ],
       "Diesel Fuels": [
         "Straight-run diesel",
@@ -222,6 +225,7 @@
         "5-Methylfurfural",
         "C15 biofuel precursor",
         "Furfural",
+        "Cyclopentanone",
         "Acetic acid",
         "50 wt% acetic acid aqueous solution"
       ],
@@ -233,12 +237,12 @@
         "Hydroxyalkylation/alkylation product",
         "Hydroxyalkylation/alkylation reaction products"
       ],
-      "Synthesis Gas": [
-        "Synthesis gas"
-      ],
       "Bio-crude Oils": [
         "Botryococcus braunii liquid",
         "Grindelia squarrosa biocrude"
+      ],
+      "Synthesis Gas": [
+        "Synthesis gas"
       ],
       "Aviation Fuels": [
         "Jet fuel"
@@ -264,52 +268,50 @@
       ],
       "Organic Waste": [
         "Food waste"
-      ],
-      "Reaction Mixtures": [
-        "Cyclopentanone"
       ]
     }
   },
   "Catalyst": {
     "categories": [
-      "Heterogeneous catalyst",
-      "Oxide-related",
-      "Bimetallic-related (Ni, Pd)",
-      "Acid-related",
-      "W-related",
-      "Bimetallic-related (Ni, Mo)",
-      "Cu-related",
-      "Bimetallic-related (Ru, Re)",
-      "Bimetallic-related (Sn, Pt)",
-      "Tandem-related",
-      "Clay-related",
-      "Bimetallic-related (Ni, Ag)",
-      "Hybrid-related",
-      "Ru-related",
-      "Bimetallic-related (Ni, Cu)",
       "Fe-related",
-      "Pt-related",
-      "Pd-related",
-      "Ni-related",
-      "MOF-related",
-      "Zr-related",
+      "Ru-related",
       "Bimetallic-related (Si,Zr)",
-      "Molecular Sieve-related",
-      "Bimetallic-related (Ni, Fe)",
-      "Bimetallic-related (Ni, La)",
-      "Co-related",
-      "Ti-related",
-      "Bimetallic-related (Co, Mo)",
-      "Bimetallic-related (Ni, W)",
+      "Bimetallic-related (Sn, Pt)",
+      "MOF-related",
       "Mo-related",
-      "Bifunctional catalyst",
-      "Bimetallic-related (Si, Al)",
-      "Carbon-related",
-      "Zn-related",
-      "Resin-related",
+      "Molecular Sieve-related",
+      "W-related",
+      "Bimetallic-related (Ni, Cu)",
+      "Bimetallic-related (Ni, Mo)",
+      "Clay-related",
+      "Composite-related",
+      "Noble Metal-related",
+      "Tandem-related",
       "Bimetallic-related (Ni, Ru)",
+      "Oxide-related",
+      "Acid-related",
       "Zeolite-related",
-      "Noble Metal-related"
+      "Resin-related",
+      "Ni-related",
+      "Zn-related",
+      "Bifunctional catalyst",
+      "Bimetallic-related (Ru, Re)",
+      "Bimetallic-related (Ni, Ag)",
+      "Cu-related",
+      "Co-related",
+      "Bimetallic-related (Ni, Fe)",
+      "Bimetallic-related (Co, Mo)",
+      "Pd-related",
+      "Bimetallic-related (Ni, La)",
+      "Bimetallic-related (Ni, W)",
+      "Carbon-related",
+      "Heterogeneous catalyst",
+      "Ti-related",
+      "Bimetallic-related (Ni, Pd)",
+      "Hybrid-related",
+      "Bimetallic-related (Si, Al)",
+      "Zr-related",
+      "Pt-related"
     ],
     "items": {
       "Pt-related": [
@@ -333,12 +335,12 @@
         "Platinum on SOD-NiMo-silica-alumina",
         "Platinum-supported Y-zeolite-alumina composite",
         "Platinum-supported Y-zeolite-alumina composite, Platinum-supported ZSM-5-zeolite-alumina composite",
+        "Sulfonated mesoporous Y zeolite with nickel",
         "Platinum on H-BEA zeolite",
         "Platinum on SAPO-11",
-        "Platinum on H-ZSM5",
         "Platinum-loaded zeolite catalysts",
         "Platinum on H-mordenite",
-        "Sulfonated mesoporous Y zeolite with nickel",
+        "Platinum on H-ZSM5",
         "Platinum on heteropoly acid/MCM-41 bifunctional catalyst",
         "Platinum on ZSM-22",
         "Platinum on zeolite",
@@ -355,7 +357,6 @@
         "Nickel on H-beta zeolite",
         "Nickel-based bifunctional catalysts",
         "Nickel on HZSM-5",
-        "Tseokar-2 catalyst",
         "Nickel on SAPO-11",
         "Nickel on alumina",
         "Mesoporous Y zeolite-supported nickel catalyst",
@@ -370,10 +371,12 @@
         "Nickel oxide on lithium ZSM-5",
         "Nickel on hydroxyapatite",
         "Nickel on SBA-15",
-        "Platinum on ceria-alumina",
-        "H-ZSM-5 zeolite",
         "Nickel phosphide-loaded zeolite",
+        "H-MFI type zeolite",
+        "Platinum on ceria-alumina",
         "Nickel on H-erionite",
+        "Tseokar-2 catalyst",
+        "H-ZSM-5 zeolite",
         "Nickel on Beta zeolite",
         "Nickel on HZSM-5/SBA-15",
         "H-MCM-49 zeolite, Nickel on H-MCM-49 bifunctional catalysts",
@@ -387,6 +390,7 @@
         "Nickel on ZSM-5",
         "Self-pillared nickel on ZSM-5 nanosheet catalyst",
         "Nickel calcium on ZSM-5",
+        "Manganese iron cobalt nickel copper on carbon",
         "Commercial nickel catalyst",
         "Bifunctional zeolite mixture supported nickel catalyst, 10 wt% nickel on ZSM-5.SAPO-11",
         "Nickel on HZSM-5@silica@iron oxide",
@@ -394,52 +398,50 @@
         "Nickel on aluminum phosphate",
         "Hierarchical HZSM-5 supported nickel catalyst",
         "Raney nickel",
-        "Manganese iron cobalt nickel copper on carbon",
-        "Nickel-based catalyst",
-        "H-MFI type zeolite"
+        "Nickel-based catalyst"
       ],
       "Zeolite-related": [
         "Zeolite",
         "Beta zeolite (SiO2/Al2O3 = 25)",
+        "Nickel on zeolite beta",
         "USY zeolite",
         "Composite catalyst",
         "Composite catalyst, Bifunctional catalyst",
         "Y zeolite",
-        "Nickel on zeolite beta",
-        "Nickel on HZSM-5 modified with MCM-41",
+        "Platinum on Al-MCM-41 mesoporous molecular sieves",
+        "Nickel oxide on ZSM-5",
+        "Fluoride-modified ZSM-5",
         "HZSM-5 zeolite",
-        "Platinum on zirconia-titania-alumina wall-coated catalyst",
         "H-ZSM-11 zeolite",
         "ZSM-5-coated alumina hollow fiber",
-        "Palladium on beta-zeolite",
-        "Platinum on Al-MCM-41 mesoporous molecular sieves",
         "Nickel on HY zeolite",
-        "Mesoporous zeolite",
-        "Mesoporous zeolite-based catalyst",
-        "Nickel-based mesoporous zeolites",
+        "Macro-meso-HZSM-5 coating",
+        "Platinum on zirconia-titania-alumina wall-coated catalyst",
+        "Acid/alkali-treated activated carbon catalyst",
         "MCM-22 zeolite",
         "Mesoporous ZSM-5",
         "HZ zeolite",
         "Dealuminated zeolite Beta",
         "HMCM-22 zeolite",
-        "HY zeolite",
         "Acidic zeolite catalysts",
-        "Fluoride-modified ZSM-5",
-        "Acid/alkali-treated activated carbon catalyst",
-        "Nickel oxide on ZSM-5",
-        "Nickel-based metal-organic frameworks",
-        "Macro-meso-HZSM-5 coating",
+        "HY zeolite",
+        "Palladium on beta-zeolite",
+        "Mesoporous zeolite",
         "Cobalt aluminate nanoparticles",
         "Silica-zirconium nitride",
-        "Lewis acid zeolite",
+        "Nickel on HZSM-5 modified with MCM-41",
+        "Nickel-based metal-organic frameworks",
+        "Mesoporous zeolite-based catalyst",
+        "Nickel-based mesoporous zeolites",
         "Metal-organic framework",
-        "Bifunctional acid-base strontium-titanium mixed oxides supported on SBA-15"
+        "Bifunctional acid-base strontium-titanium mixed oxides supported on SBA-15",
+        "Lewis acid zeolite"
       ],
       "Ru-related": [
         "Ruthenium on carbon",
         "Ruthenium-decorated cerium phosphate",
-        "Metal zeolite catalyst",
         "Metal-modified ZSM-5",
+        "Metal zeolite catalyst",
         "DAB-Ru catalyst",
         "Zeolite-supported ruthenium catalyst",
         "Ruthenium on hydroxyapatite"
@@ -457,8 +459,8 @@
         "Palladium on carbon",
         "Zeolite supported palladium catalysts",
         "Palladium on H-beta zeolite",
-        "Palladium on SBA-15",
         "Mordenite zeolite",
+        "Palladium on SBA-15",
         "Palladium-based zeolite catalyst",
         "Palladium-supported hierarchical ZSM-5 zeolite",
         "Palladium on silica"
@@ -468,12 +470,12 @@
       ],
       "Bifunctional catalyst": [
         "Bifunctional catalyst",
-        "HUSY zeolite",
         "Bifunctional catalysts",
         "Bifunctional metal-acid catalyst",
         "Metal/acid bifunctional catalyst",
-        "ZHC-01 hydrocracking catalyst",
         "Nitrogen-doped ZSM-5 nano catalyst",
+        "HUSY zeolite",
+        "ZHC-01 hydrocracking catalyst",
         "Metal-acid bifunctional catalyst",
         "Bifunctional heterogeneous catalyst"
       ],
@@ -492,7 +494,8 @@
         "Cerium-MCM-41 mesoporous molecular sieve",
         "Aluminum-SBA-15",
         "Metal-loaded SAPO-11 molecular sieve",
-        "Modified Al-MCM-41"
+        "Modified Al-MCM-41",
+        "MCM-22"
       ],
       "Bimetallic-related (Si,Zr)": [
         "Silica zirconia catalysts"
@@ -513,13 +516,13 @@
       ],
       "Acid-related": [
         "Solid acid catalyst",
+        "Metal on titanium dioxide-HZSM5",
         "Mineral acid",
         "Sulfated zirconia",
-        "Metal on titanium dioxide-HZSM5",
         "Solid acid catalysts",
-        "Iron-modified MCM-41 zeolite",
+        "Zirconium-doped aluminum phosphate",
         "Acid zeolites",
-        "Zirconium-doped aluminum phosphate"
+        "Iron-modified MCM-41 zeolite"
       ],
       "Resin-related": [
         "Polystyrene resin",
@@ -535,21 +538,19 @@
         "Platinum on zirconia-titania-alumina",
         "Carbon-based solid acid"
       ],
+      "Zn-related": [
+        "Ruthenium on ceria"
+      ],
       "Co-related": [
         "Cobalt on Al-TUD-1",
+        "Silica-alumina-x/nickel molybdenum",
         "Cobalt on silica gel/H-beta series catalysts",
         "Hierarchical cobalt on Beta metal-zeolite bifunctional catalyst",
         "Cobalt-based zeolite structured catalyst",
         "Cobalt-based catalyst",
         "Cobalt on HZSM-5",
         "Cobalt on gamma-alumina",
-        "Silica-alumina-x/nickel molybdenum",
         "Cobalt-modified ZSM-5"
-      ],
-      "Bimetallic-related (Si, Al)": [
-        "Zinc on ZSM-5",
-        "Mesoporous amorphous mixed silicon-aluminum oxides",
-        "Mesoporous amorphous mixed silicon-aluminum oxide"
       ],
       "Fe-related": [
         "Iron oxide on USY zeolite",
@@ -560,8 +561,17 @@
         "ZSM-5-coated nickel chromium iron aluminum metal foam",
         "Platinum on silica-alumina"
       ],
-      "Zn-related": [
-        "Ruthenium on ceria"
+      "Bimetallic-related (Si, Al)": [
+        "Zinc on ZSM-5",
+        "Mesoporous amorphous mixed silicon-aluminum oxides",
+        "Mesoporous amorphous mixed silicon-aluminum oxide",
+        "HZSM-5 (Si/Al = 130)",
+        "HY zeolite (SiO2/Al2O3 = 5.4)",
+        "Hβ zeolite (Si/Al = 25)",
+        "10 wt% Ni on HZSM-5 (Si/Al = 25)"
+      ],
+      "Zr-related": [
+        "Platinum on nitrogen-doped ZSM-5 nanosheets"
       ],
       "Oxide-related": [
         "Oxide catalyst",
@@ -610,50 +620,51 @@
         "Transition metal-loaded titanium dioxide solid acid catalyst",
         "Magnesium aluminum mixed oxides"
       ],
-      "Zr-related": [
-        "Platinum on nitrogen-doped ZSM-5 nanosheets"
-      ],
       "Noble Metal-related": [
         "Noble metal catalyst"
+      ],
+      "Composite-related": [
+        "Isophorone acts as internal photosensitizer; no additional catalyst",
+        "Isophorone (acts as self-sensitizer)"
       ]
     }
   },
   "Product": {
     "categories": [
-      "Furanic Dimers",
-      "Furanic Platform Molecules",
-      "Olefins",
-      "Jet Fuel Range Alkanes",
       "Gasoline Range Hydrocarbon Mixtures",
-      "iso-Alkanes",
-      "Deoxygenated Hydrocarbon Mixtures",
+      "Polycyclic Aromatics / Hydrogenated PAHs",
+      "Diesel Range Hydrocarbons/Alkanes",
+      "Esters",
       "Ketones/Aldehydes/Enones",
       "Hydrocarbon Dimers/Oligomers",
-      "Phenolic Compounds",
-      "Hydroprocessed Oils",
-      "Branched Alkanes",
-      "n-Alkanes",
-      "Terpenoid Alkanes",
-      "Polycyclic Aromatics / Hydrogenated PAHs",
-      "Hydrogen",
-      "Solid Residues & Byproducts",
-      "Monocyclic Aromatic Hydrocarbons",
-      "Catalysts & Specific Process Products",
-      "Esters",
       "Bio-oil / Pyrolysis Oil",
-      "Fuel Precursors & Condensation Products",
-      "Light Naphtha / Light Hydrocarbons",
-      "Diesel Range Hydrocarbons/Alkanes",
+      "Gasoline",
+      "Terpenoid Alkanes",
+      "n-Alkanes",
+      "Jet Fuel Range Alkanes",
+      "iso-Alkanes",
+      "Solid Residues & Byproducts",
+      "Phenolic Compounds",
+      "LPG & C1-C4 Gases",
       "Jet Fuel Range Hydrocarbon Mixtures",
+      "Deoxygenated Hydrocarbon Mixtures",
+      "Bicyclic/Tricyclic Oxygenates",
+      "Olefins",
+      "Aviation Fuel",
+      "Monocyclic Aromatic Hydrocarbons",
       "Bio-Aviation Fuel",
-      "Oxygenates",
+      "Branched Alkanes",
       "Broad-Cut/Mixed Hydrocarbons",
       "Cycloalkanes",
-      "Aviation Fuel",
-      "Gasoline",
-      "LPG & C1-C4 Gases",
+      "Furanic Dimers",
+      "Oxygenates",
+      "Light Naphtha / Light Hydrocarbons",
+      "Catalysts & Specific Process Products",
+      "Furanic Platform Molecules",
+      "Hydrogen",
+      "Hydroprocessed Oils",
       "Carboxylic Acids",
-      "Bicyclic/Tricyclic Oxygenates"
+      "Fuel Precursors & Condensation Products"
     ],
     "items": {
       "Aviation Fuel": [
@@ -665,14 +676,14 @@
         "C₈-C₁₆ hydrocarbons (jet fuel range)",
         "C₈–C₁₆ hydrocarbons (biojet fuel)",
         "Bio-jet fuel",
+        "Alkylnaphthalenes",
         "Jet fuel",
         "C₉-C₁₅ alkanes (aviation-fuel-range)",
         "C₈-C₁₆ hydrocarbons (bio-jet fuel)",
         "Jet fuel components (C₈-C₁₆ alkanes, iso-paraffins, cyclo-paraffins, aromatics)",
         "C₈-C₁₅ hydrocarbons (jet fuel fraction)",
+        "C₈-C₁₇ alkanes",
         "C₈-C₁₆ alkanes (jet fuel-range)",
-        "Hydrogen (H₂)",
-        "Methane (CH₄)",
         "C₉⁺ hydrocarbons (jet fuel)",
         "Hydrocarbon biofuel",
         "C₈-C₁₂ hydrocarbons (jet fuel-range)",
@@ -682,16 +693,14 @@
         "C₈-C₁₆ hydrocarbons (bio-jet fuel range)",
         "C₈-C₁₆ jet fuel precursors",
         "C₈-C₁₆ jet fuel components",
-        "Dimeric compounds (C₁₂⁺ naphthenes)",
-        "Alkylnaphthalenes",
         "Renewable diesel and jet fuel range branched alkanes",
+        "Dimeric compounds (C₁₂⁺ naphthenes)",
         "Bio-jet fuel (C₇–C₁₆ hydrocarbons)",
         "Alternative jet fuel (alkanes C₁₁–C₂₉ and aromatics C₁₈–C₂₄)",
         "Alternative jet fuel (C₈-C₁₅ hydrocarbons)",
         "C₉-C₁₅ hydrocarbons (bio-jet fuel)",
         "Diesel and jet fuel range alkanes",
         "C₉-C₁₆ hydrocarbons (jet fuel range)",
-        "C₈-C₁₇ alkanes",
         "Diesel or jet fuel range branched alkanes",
         "C₉–C₁₅ alkanes (diesel and jet fuel range)",
         "C₉-C₁₅ alkanes",
@@ -702,9 +711,10 @@
         "C₁–C₄ gas hydrocarbons",
         "C₃-C₄ gases",
         "LPG",
-        "Liquid fuels",
         "Ethane (C₂H₆)",
-        "Gases"
+        "C₁-C₄ gases",
+        "Gases",
+        "Liquid fuels"
       ],
       "Deoxygenated Hydrocarbon Mixtures": [
         "Deoxygenated hydrocarbon mixtures (branched C₆-C₂₀ cycloalkanes)",
@@ -716,11 +726,11 @@
         "C₁–C₁₈ hydrocarbons",
         "C₉-C₁₅ hydrocarbons",
         "C₅–C₁₈ liquid alkanes",
-        "Stabilized reformate",
-        "Ethylene (C₂H₄)",
-        "Upgraded sunflower oils (USO)",
         "C₁-C₄ hydrocarbons (light fractions)",
         "Liquid hydrocarbons (LHCs)",
+        "Upgraded sunflower oils (USO)",
+        "Linear hydrocarbons (CₙH₂ₙ₊₂/CₙH₂ₙ)",
+        "Ethylene (C₂H₄)",
         "C₁–C₈ hydrocarbons",
         "C₁-C₈ hydrocarbons",
         "Hydrocarbon fuels",
@@ -728,26 +738,25 @@
         "Aromatic hydrocarbons",
         "C₈–C₁₆ hydrocarbons",
         "C₅-C₂₀ liquid alkanes",
+        "Stabilized reformate",
         "C₁₁–C₂₉ alkanes",
         "C₇-C₁₈ hydrocarbons",
-        "Linear hydrocarbons (CₙH₂ₙ₊₂/CₙH₂ₙ)",
         "C12 fuel precursors ([1,1'-bi(cyclohexylidene)]-2-one C₁₂H₁₈O and [1,1'-bi(cyclohexan)]-1'-en-2-one C₁₂H₁₈O)",
         "Primary condensation products (C5-C5, C5-C6, C6-C6)"
       ],
       "Jet Fuel Range Alkanes": [
         "C₈-C₁₈ alkanes",
-        "C₈-C₁₆ alkanes",
         "Nonane (C₉H₂₀)",
-        "C₁-C₄ gases",
+        "C₈-C₁₆ alkanes",
+        "C₃-C₂₇ aliphatic compounds",
+        "Light hydrocarbons",
         "C₁₂-C₁₄ alkanes (jet-fuel-range)",
         "C₈-C₁₆ alkanes (jet-fuel-range)",
         "n-C₈-C₁₆ alkanes",
-        "Light hydrocarbons",
         "C₈ to C₁₅ alkanes (bio-jet fuel grade)",
         "Biogasoline (C₅-C₁₂)",
         "C₈-C₁₄ liquid alkanes",
-        "Biofuel",
-        "C₃-C₂₇ aliphatic compounds"
+        "Biofuel"
       ],
       "Cycloalkanes": [
         "Ethylcyclohexane (C₈H₁₆)",
@@ -777,7 +786,6 @@
         "Pentane (C₅H₁₂)",
         "C₁₇-C₁₈ alkanes",
         "n-Hexadecane (C₁₆H₃₄)",
-        "Motor gasoline (fraction boiling up to 240°C)",
         "n-Paraffins (mainly C₁₅H₃₂ and C₁₇H₃₆)",
         "Chain alkanes",
         "Isomer alkanes (iso-C₁₇H₃₆, iso-C₁₈H₃₈), n-C₁₇H₃₆, n-C₁₈H₃₈, C₂–C₁₆ hydrocarbons, gaseous products (CH₄, CO, CO₂, C₂–C₆ hydrocarbons)",
@@ -786,6 +794,8 @@
         "Alkanes",
         "n-Heptadecane (C₁₇H₃₆)",
         "Decane (C₁₀H₂₂)",
+        "Methane (CH₄)",
+        "Motor gasoline (fraction boiling up to 240°C)",
         "Undecane (C₁₁H₂₄)",
         "iso-Hexadecane (C₁₆H₃₄)",
         "C₈-C₁₆ alkanes (specifically C₁₂H₂₆, C₁₃H₂₈, C₁₄H₃₀, C₁₅H₃₂, C₁₆H₃₄)",
@@ -806,19 +816,21 @@
         "Ethylbenzene (C₈H₁₀)",
         "Alkylbenzenes",
         "(Cyclohexylmethyl)benzene (C₁₃H₁₈)",
-        "Durene (1,2,4,5-tetramethylbenzene, C₁₀H₁₄)",
         "5,5′-(1-Hydroxypropane-2,2-diyl)bis(2-methylfuran) (C₁₃H₁₈O₃)",
-        "C₁₂⁺ dimeric cycloalkanes (naphthenes)",
-        "Dimeric compounds (cyclic alcohols and phenols)",
+        "Durene (1,2,4,5-tetramethylbenzene, C₁₀H₁₄)",
         "5-Methylfurfural (C₆H₆O₂)",
         "Benzene (C₆H₆)",
         "BTX (benzene C₆H₆, toluene C₇H₈, xylene C₈H₁₀)",
+        "C₁₂⁺ dimeric cycloalkanes (naphthenes)",
+        "Dimeric compounds (cyclic alcohols and phenols)",
         "n-Propylbenzene (C₉H₁₂)",
         "p-Cymene (C₁₀H₁₄)",
         "C₈-C₁₂ single-ring aromatics",
         "FuMe (C11 adduct)",
         "(E)-2-(furan-2-ylmethylene)cyclohexan-1-one (C₁₁H₁₂O₂)",
-        "1-(2-Hydroxy-4-methoxyphenyl)-3-(4-hydroxyphenyl) prop-2-en-1-one (C₁₆H₁₄O₄)"
+        "1-(2-Hydroxy-4-methoxyphenyl)-3-(4-hydroxyphenyl) prop-2-en-1-one (C₁₆H₁₄O₄)",
+        "Spiro Diels–Alder cycloadducts of isophorone with cellulose-derived furans",
+        "Aromatic hydrocarbons (toluene, ethylbenzene, o-xylene, p-xylene, propylbenzene, 1-ethyl-2-methylbenzene, etc.)"
       ],
       "Terpenoid Alkanes": [
         "Squalane (C₃₀H₆₂)"
@@ -826,11 +838,11 @@
       "Bio-oil / Pyrolysis Oil": [
         "CFP oil",
         "Bio-oil",
+        "Bio-aviation fuel",
         "Oil",
         "Bio-gasoline",
         "Biocrude",
-        "Oil (cyclohexane-soluble)",
-        "Bio-aviation fuel"
+        "Oil (cyclohexane-soluble)"
       ],
       "Oxygenates": [
         "Oxygenated organic intermediates",
@@ -843,26 +855,27 @@
         "C₅-C₁₂ hydrocarbons (gasoline-range)",
         "C₅-C₉ hydrocarbons (gasoline fraction)",
         "Lighter components (<C9)",
+        "C₁₀-C₁₅ hydrocarbons (bio-jet fuel fraction)",
+        "Alkane",
         "<C9 hydrocarbons (gasoline)",
         "Gasoline (C₅-C₁₀)",
         "C₅-C₈ hydrocarbons (gasoline range)",
-        "Gasoline (C₈-C₁₂)",
-        "C₁₀-C₁₅ hydrocarbons (bio-jet fuel fraction)",
-        "Alkane"
+        "Gasoline (C₈-C₁₂)"
       ],
       "Gasoline": [
         "Gasoline",
+        "Gaseous products",
         "Organic phase",
-        "Organic phase bio-oil",
-        "Gaseous products"
+        "Organic phase bio-oil"
       ],
       "Polycyclic Aromatics / Hydrogenated PAHs": [
         "Tetralin (C₁₀H₁₂)",
-        "1-Cyclopentylcyclopentene (C₁₀H₁₆)",
         "1,2,3,4-Tetrahydronaphthol (C₁₀H₁₂O)",
         "Tetrahydronaphthalene (C₁₀H₁₂)",
+        "1-Cyclopentylcyclopentene (C₁₀H₁₆)",
         "Tetrahydroacenaphthene (C₁₂H₁₄)",
-        "β-Furfurylidenelevulinic acid (C₁₀H₁₂O₄)"
+        "β-Furfurylidenelevulinic acid (C₁₀H₁₂O₄)",
+        "High-energy-density fuel intermediates (polycyclic norbornyl-substituted aromatics) which are further hydrogenated to give high-energy-density fuel"
       ],
       "Diesel Range Hydrocarbons/Alkanes": [
         "Diesel fraction",
@@ -884,7 +897,8 @@
         "2-Methyl-5-[(5-methylfuran-2-yl)-phenylmethyl]furan (C₁₇H₁₆O₂)",
         "FCF (monocyclic target product)",
         "Ce-MCM-41 mesoporous molecular sieve",
-        "Ethanol (C₂H₅OH)"
+        "Ethanol (C₂H₅OH)",
+        "Tetrahydro-2-methyl-5,γ-dioxo-2-furanpentanoic acid (C₁₀H₁₄O₅)"
       ],
       "Light Naphtha / Light Hydrocarbons": [
         "Light naphtha",
@@ -896,12 +910,12 @@
         "C₈–C₁₆ hydrocarbons (jet-fuel range)",
         "C₈-C₁₇ hydrocarbons (jet-fuel range)",
         "C₈-C₁₆ hydrocarbons (jet biofuel range)",
+        "C₈-C₁₆ hydrocarbons (jet-range)",
+        "Bio-jet fuel (C₈-C₁₆ alkanes)",
         "C₈-C₁₁ hydrocarbons (cracking products)",
         "C₈–C₁₁ hydrocarbons",
         "C₁₂–C₁₈ hydrocarbons (jet-fuel range)",
-        "C₈-C₁₆ hydrocarbons (jet-range)",
-        "C₈-C₁₆ hydrocarbons (jet-fuel range)",
-        "Bio-jet fuel (C₈-C₁₆ alkanes)"
+        "C₈-C₁₆ hydrocarbons (jet-fuel range)"
       ],
       "Bio-Aviation Fuel": [
         "Aviation biofuel",
@@ -910,12 +924,12 @@
       "Ketones/Aldehydes/Enones": [
         "2-Phenylpropanal (C₉H₁₀O)",
         "2-Methoxycyclohexanone (C₇H₁₂O₂)",
-        "4-(2-Furyl)-3-buten-2-one (C₈H₈O₂)",
         "Branched-chain C9 α,β-unsaturated carbonyl compounds (C9B-OH and C9B)",
+        "FC (first condensation adduct)",
+        "2-Cyclohexylidenecyclohexanone (C₁₂H₁₈O)",
         "Monocyclic compounds",
         "C9 unsaturated ketone with branched structure (C9B)",
-        "FC (first condensation adduct)",
-        "2-Cyclohexylidenecyclohexanone (C₁₂H₁₈O)"
+        "4-(2-Furyl)-3-buten-2-one (C₈H₈O₂)"
       ],
       "Furanic Dimers": [
         "2,2′-(2-Furylmethylene)bis(5-methylfuran) (C₁₅H₁₄O₃)",
@@ -927,7 +941,16 @@
         "5,5'-(butane-1,1-diyl)bis(2-methylfuran) (C₁₄H₁₈O₂)",
         "5,5′-(furan-2-ylmethylene)bis(2-methylfuran) (C₁₅H₁₄O₃)",
         "5,5′-(cyclopentane-1,1-diyl)bis(2-methylfuran) (C₁₅H₂₀O₂)",
-        "Hydrogenated difurfurylidene acetone dimers (H-F2A dimers)"
+        "Hydrogenated difurfurylidene acetone dimers (H-F2A dimers)",
+        "Mixture of Diels-Alder adducts: DCMF, CPMF, TCPD"
+      ],
+      "Bicyclic/Tricyclic Oxygenates": [
+        "C₈-C₁₅ aromatics",
+        "1-methyl-1,4,4a,5,6,7,8,8a-octahydro-1H-1,4-epoxy-5,8-methylnaphthalen (C₁₁H₁₆O)",
+        "1-methyl-1,4,4a,9b-tetrahydro-1H-1,4-epoxy-fluorene (C₁₄H₁₄O)",
+        "Bi- and tricyclic jet fuel precursors",
+        "Spiro adduct A (5-norbornen-2-spiro-10-cyclopentan-2-one)",
+        "Spirocyclic [2+2] cycloadduct of β-pinene and isophorone (spiro-fuel)"
       ],
       "Furanic Platform Molecules": [
         "5-Chloromethylfurfural (C₆H₅ClO₂)",
@@ -938,6 +961,14 @@
         "Branched hydrocarbons (Jet-A1 biofuel component)",
         "Isomerized renewable hydrocarbons"
       ],
+      "Solid Residues & Byproducts": [
+        "C₅-C₇ hydrocarbons (gasoline fraction)",
+        "Solid residue"
+      ],
+      "Hydrogen": [
+        "Hydrogen (H₂)",
+        "Upgraded sunflower oils"
+      ],
       "Olefins": [
         "Linear hydrocarbons (paraffins, olefins)",
         "Coke",
@@ -946,24 +977,6 @@
         "C₄ olefins (C₄H₈)",
         "2-Butene (C₄H₈)",
         "Highly branched olefin product primarily in the gasoline range (70% mass yield based on simulated distillation)"
-      ],
-      "Hydrogen": [
-        "Upgraded sunflower oils"
-      ],
-      "Solid Residues & Byproducts": [
-        "C₅-C₇ hydrocarbons (gasoline fraction)",
-        "Solid residue"
-      ],
-      "Hydroprocessed Oils": [
-        "C₁₀-C₁₄ alkanes",
-        "C₈-C₁₄ alkanes",
-        "Upgraded biocrude"
-      ],
-      "Bicyclic/Tricyclic Oxygenates": [
-        "1-methyl-1,4,4a,5,6,7,8,8a-octahydro-1H-1,4-epoxy-5,8-methylnaphthalen (C₁₁H₁₆O)",
-        "1-methyl-1,4,4a,9b-tetrahydro-1H-1,4-epoxy-fluorene (C₁₄H₁₄O)",
-        "C₈-C₁₅ aromatics",
-        "Bi- and tricyclic jet fuel precursors"
       ],
       "Hydrocarbon Dimers/Oligomers": [
         "Highly branched long chain oligomers",
@@ -977,13 +990,18 @@
         "C₆⁺ oligomers",
         "C₈-C₁₁ oligomers",
         "Oligomeric hydrocarbon mixtures",
-        "Oligomers"
+        "Oligomers",
+        "Diels-Alder adduct A (endo/exo 1-methyl-1,4,4a,5,6,7,8,8a-octahydro-1,4-epoxy-5,8-methanonaphthalene)"
+      ],
+      "Hydroprocessed Oils": [
+        "Upgraded biocrude",
+        "C₁₀-C₁₄ alkanes",
+        "C₈-C₁₄ alkanes"
       ],
       "Fuel Precursors & Condensation Products": [
         "Hydroxyalkylation-alkylation (HAA) adducts",
         "C15 biofuel precursor",
-        "Aromatic hydrocarbons (xylenes C₈H₁₀, mesitylene C₉H₁₂)",
-        "Tetrahydro-2-methyl-5,γ-dioxo-2-furanpentanoic acid (C₁₀H₁₄O₅)"
+        "Aromatic hydrocarbons (xylenes C₈H₁₀, mesitylene C₉H₁₂)"
       ],
       "Phenolic Compounds": [
         "1,5-Di-2-furanyl-1,4-pentadien-3-one (C₁₃H₁₀O₃)"

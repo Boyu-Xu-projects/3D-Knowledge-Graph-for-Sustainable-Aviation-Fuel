@@ -520,22 +520,25 @@ function initializeGraph() {
         }
         
         this.validateData();
-        
+
         this.graphData = {
-          nodes: this.nodes.map(node => ({
-            id: node.id,
-            name: node.name,
-            type: node.type,
-            category: node.category,
-            val: 5,
-            color: this.nodeColors[node.type] || '#888888'
-          })),
-          links: this.links.map(link => ({
-            source: link.source,
-            target: link.target,
-            relation: link.relation || 'related'
-          }))
-        };
+        nodes: this.nodes.map(node => ({
+        id: node.id,
+        name: node.name,
+       type: node.type,
+       category: node.category,
+       // 添加这两行，复制titles和dois字段
+       titles: node.titles || [],
+       dois: node.dois || [],
+       val: 5,
+        color: this.nodeColors[node.type] || '#888888'
+     })),
+     links: this.links.map(link => ({
+    source: link.source,
+    target: link.target,
+    relation: link.relation || 'related'
+      }))
+    };
         
         this.setupNodeColors();
         this.setupFilterOrder();
@@ -628,7 +631,7 @@ function initializeGraph() {
         };
         return getConversionValue(a.name) - getConversionValue(b.name);
       },
-          'Product Selectivity': (a, b) => {
+          'Product selectivity': (a, b) => {
             const order = { 'High': 3, 'Medium': 2, 'Low': 1 };
             return (order[b.name] || 0) - (order[a.name] || 0);
           }
@@ -645,7 +648,7 @@ function initializeGraph() {
           "Operation mode",
           "Catalyst",
           "Product",
-          "Product Selectivity",
+          "Product selectivity",
           "Product yield",
           "Atmosphere", 
           "Reactant molar ratio",
@@ -770,7 +773,7 @@ function initializeGraph() {
             {name: "Styrene", category: "Aromatic"},
             {name: "Ethylene", category: "Olefin"}
           ],
-          "Product Selectivity": ["Low", "Medium", "High", ">90%", "80-90%", "70-80%"],
+          "Product selectivity": ["Low", "Medium", "High", ">90%", "80-90%", "70-80%"],
           "Product yield": ["50-60%", "60-70%", "70-80%", "80-90%", ">90%"],
           "Atmosphere": ["Air", "N2", "H2", "O2", "Argon", "Vacuum"],
           "Reactant molar ratio": ["1:1", "1:2", "1:3", "2:1", "3:1", "10:1"],
@@ -851,7 +854,7 @@ function initializeGraph() {
           'Operation mode': '#ffff44',
           'Catalyst': '#ff44ff',
           'Product': '#44ffff',
-          'Product Selectivity': '#ff8844',
+          'Product selectivity': '#ff8844',
           'Product yield': '#8844ff',
           'Atmosphere': '#88ff44',
           'Reactant molar ratio': '#ff4488',
@@ -866,7 +869,9 @@ function initializeGraph() {
         this.nodeColors = typeColorMap;
       }
 
-      setupGraph() {
+      setupGraph() 
+      
+      {
         document.getElementById('loading').style.display = 'none';
         
         if (this.nodes.length === 0) {
@@ -904,45 +909,140 @@ function initializeGraph() {
             })
             .nodeThreeObjectExtend(true)
             
-            .nodeLabel(node => `
-              <div style="background: rgba(0,0,0,0.8); color: white; padding: 8px; border-radius: 4px; font-size: 12px;">
-                <strong>${node.name}</strong><br/>
-                <span style="color: ${this.nodeColors[node.type] || '#888888'}">${node.type}</span>
-                ${node.category ? `<br/><span style="color: #ccc">Category: ${node.category}</span>` : ''}
+            .nodeLabel(node => {
+  // 创建唯一的ID用于显示更多内容
+  const tooltipId = `tooltip-${node.id}`;
+  
+  return `
+    <div style="background: rgba(0,0,0,0.95); color: white; padding: 12px; border-radius: 6px; font-size: 12px; max-width: 450px; border: 2px solid ${this.nodeColors[node.type] || '#888888'}">
+      <strong style="font-size: 14px; color: ${this.nodeColors[node.type] || '#888888'}">${node.name}</strong><br/>
+      <span style="color: #ccc">Type: ${node.type}</span>
+      ${node.category ? `<br/><span style="color: #aaa">Category: ${node.category}</span>` : ''}
+      
+      <!-- Title显示区域 -->
+      ${node.titles && node.titles.length > 0 ? `
+        <div style="margin-top: 8px;">
+          <strong style="color: #ffcc00; display: block; margin-bottom: 4px;">📚 Related Literature</strong>
+          <div id="${tooltipId}-titles">
+            ${node.titles.slice(0, 2).map(title => `
+              <div style="color: #ffdd99; margin: 2px 0; font-size: 11px;">• ${this.truncateText(title, 60)}</div>
+            `).join('')}
+            ${node.titles.length > 2 ? `
+              <div style="color: #ccc; cursor: pointer; font-size: 11px; margin-top: 4px;" 
+                   onclick="kg.toggleMoreContent('${tooltipId}-titles', ${node.titles.length})">
+                📖 and ${node.titles.length - 2} more titles...
               </div>
-            `)
-            
-            .linkColor(() => 'rgba(200,200,200,0.6)')
-            .linkWidth(0.7)
-            .linkDirectionalParticles(1)
-            .linkDirectionalParticleSpeed(0.003)
-            .linkDirectionalParticleWidth(0.7)
-            .onNodeHover(node => {
-              if (node) {
-                this.highlightRelatedNodes(node.id);
-              } else {
-                this.resetHighlight();
-              }
-            })
-            .onNodeClick(node => {
-              this.toggleNodeSelection(node);
-            });
+              <div id="${tooltipId}-titles-full" style="display: none;">
+                ${node.titles.map(title => `
+                  <div style="color: #ffdd99; margin: 2px 0; font-size: 11px;">• ${this.truncateText(title, 60)}</div>
+                `).join('')}
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      ` : ''}
+      
+      <!-- DOI显示区域 -->
+      ${node.dois && node.dois.length > 0 ? `
+        <div style="margin-top: 8px;">
+          <strong style="color: #99ccff; display: block; margin-bottom: 4px;">🔗 Related DOIs</strong>
+          <div id="${tooltipId}-dois">
+            ${node.dois.slice(0, 2).map(doi => `
+              <div style="color: #99ccff; margin: 2px 0; font-size: 10px; font-family: monospace;">• ${this.truncateText(doi, 50)}</div>
+            `).join('')}
+            ${node.dois.length > 2 ? `
+              <div style="color: #ccc; cursor: pointer; font-size: 11px; margin-top: 4px;" 
+                   onclick="kg.toggleMoreContent('${tooltipId}-dois', ${node.dois.length})">
+                📄 and ${node.dois.length - 2} more DOIs...
+              </div>
+              <div id="${tooltipId}-dois-full" style="display: none;">
+                ${node.dois.map(doi => `
+                  <div style="color: #99ccff; margin: 2px 0; font-size: 10px; font-family: monospace;">• ${this.truncateText(doi, 50)}</div>
+                `).join('')}
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      ` : ''}
+    </div>
+  `;
+})
 
-          this.graph
-            .d3Force('charge')
-            .strength(-260)
-            .distanceMax(1000);
+.linkColor(() => 'rgba(200,200,200,0.6)')
+.linkWidth(0.7)
+.linkDirectionalParticles(1)
+.linkDirectionalParticleSpeed(0.003)
+.linkDirectionalParticleWidth(0.7)
+.onNodeHover(node => {
+  if (node) {
+    this.highlightRelatedNodes(node.id);
+  } else {
+    this.resetHighlight();
+    this.resetTooltipContent(); // 添加这行
+  }
+})
+.onNodeClick(node => {
+  this.toggleNodeSelection(node);
+});
 
-          this.graph
-            .d3Force('link')
-            .distance(100)
-            .strength(0.2);
+this.graph
+  .d3Force('charge')
+  .strength(-260)
+  .distanceMax(1000);
 
-        } catch (error) {
-          this.showError('3D图形初始化失败: ' + error.message);
-          console.error('图形初始化错误:', error);
-        }
-      }
+this.graph
+  .d3Force('link')
+  .distance(100)
+  .strength(0.2);
+
+} catch (error) {
+  this.showError('3D图形初始化失败: ' + error.message);
+  console.error('图形初始化错误:', error);
+}
+      
+}
+
+// 在这里添加辅助方法
+truncateText(text, maxLength) {
+  if (text.length <= maxLength) return text;
+  return text.substring(0, maxLength) + '...';
+}
+
+// 切换显示更多内容
+toggleMoreContent(elementId, totalCount) {
+  const shortElement = document.getElementById(elementId);
+  const fullElement = document.getElementById(elementId + '-full');
+  const moreLink = shortElement.querySelector('div[onclick]');
+  
+  if (fullElement.style.display === 'none') {
+    // 显示全部内容
+    fullElement.style.display = 'block';
+    moreLink.innerHTML = `📕 Show less`;
+    moreLink.setAttribute('onclick', `kg.toggleMoreContent('${elementId}', ${totalCount})`);
+  } else {
+    // 显示部分内容
+    fullElement.style.display = 'none';
+    moreLink.innerHTML = `📖 and ${totalCount - 2} more...`;
+    moreLink.setAttribute('onclick', `kg.toggleMoreContent('${elementId}', ${totalCount})`);
+  }
+}
+
+// 点击节点外部时关闭所有展开的内容
+resetTooltipContent() {
+  // 隐藏所有展开的内容
+  document.querySelectorAll('[id$="-full"]').forEach(element => {
+    element.style.display = 'none';
+  });
+  
+  // 重置所有"and more"链接
+  document.querySelectorAll('div[onclick*="toggleMoreContent"]').forEach(link => {
+    const elementId = link.getAttribute('onclick').match(/'([^']+)'/)[1];
+    const totalCount = parseInt(link.getAttribute('onclick').match(/(\d+)\)/)[1]);
+    link.innerHTML = `📖 and ${totalCount - 2} more...`;
+  });
+}
+
+
 
       // 新增：点击分类标签选择所有该分类下的选项
       toggleCategorySelection(type, category) {
