@@ -105,14 +105,14 @@
   .options-container {
     min-height: 100px;
     max-height: 250px;
-    height: 150px; /* 默认高度 */
+    height: 200px; /* 默认高度 */
     overflow-y: auto;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     background: white;
     margin: 8px 0;
-    resize: vertical; /* 允许垂直调整大小 */
+   /* resize: vertical; /* 允许垂直调整大小 */
     cursor: ns-resize;
   }
   
@@ -151,7 +151,7 @@
     border-radius: 4px;
     background: white;
     font-size: 12px;
-    resize: vertical;
+   /* resize: vertical; */
     min-height: 100px;
     height: 120px;
   }
@@ -445,6 +445,9 @@ function initializeGraph() {
       this.currentlyHighlighted = new Set();
       this.currentFilterIndex = 0;
       this.selectedCategories = new Set();
+
+      this.pinnedTooltip = null; // 新增：固定的工具提示节点
+      this.isTooltipPinned = false; // 新增：工具提示是否固定
       
       this.init();
     }
@@ -869,144 +872,298 @@ function initializeGraph() {
         this.nodeColors = typeColorMap;
       }
 
-      setupGraph() 
+
+
+
+
+
+
+  setupGraph() {
+  document.getElementById('loading').style.display = 'none';
+  
+  if (this.nodes.length === 0) {
+    this.showError('没有可用的数据');
+    return;
+  }
+  
+  try {
+    this.graph = ForceGraph3D()
+      (document.getElementById('graph-container'))
+      .width(window.innerWidth)
+      .height(window.innerHeight)
+      .graphData(this.graphData)
+      .nodeColor(node => this.nodeColors[node.type] || '#888888')
+      .nodeRelSize(2)
+      .nodeResolution(16)
+      .nodeOpacity(0.9)
       
-      {
-        document.getElementById('loading').style.display = 'none';
-        
-        if (this.nodes.length === 0) {
-          this.showError('没有可用的数据');
-          return;
+      .nodeThreeObject(node => {
+        if (typeof SpriteText === 'undefined') {
+          // 如果 SpriteText 不可用，使用默认的球体节点
+          const nodeEl = new THREE.Mesh(
+            new THREE.SphereGeometry(5),
+            new THREE.MeshBasicMaterial({ 
+              color: this.nodeColors[node.type] || '#888888',
+              depthWrite: true
+            })
+          );
+          return nodeEl;
         }
         
-        try {
-          this.graph = ForceGraph3D()
-            (document.getElementById('graph-container'))
-            .width(window.innerWidth)
-            .height(window.innerHeight)
-            .graphData(this.graphData)
-            .nodeColor(node => this.nodeColors[node.type] || '#888888')
-            .nodeRelSize(2)
-            .nodeResolution(16)
-            .nodeOpacity(0.9)
-            
-            .nodeThreeObject(node => {
-              if (typeof SpriteText === 'undefined') {
-                return new THREE.Object3D();
-              }
-              
-              const sprite = new SpriteText(node.name);
-              sprite.material.depthWrite = false;
-              sprite.color = this.nodeColors[node.type] || '#888888';
-              sprite.textHeight = 3;
-              sprite.backgroundColor = '#000000';
-              sprite.backgroundOpacity = 0.6;
-              sprite.padding = 2;
-              sprite.borderRadius = 2;
-              sprite.position.y = 8;
-              
-              return sprite;
-            })
-            .nodeThreeObjectExtend(true)
-            
-            .nodeLabel(node => {
-  // 创建唯一的ID用于显示更多内容
-  const tooltipId = `tooltip-${node.id}`;
-  
-  return `
-    <div style="background: rgba(0,0,0,0.95); color: white; padding: 12px; border-radius: 6px; font-size: 12px; max-width: 450px; border: 2px solid ${this.nodeColors[node.type] || '#888888'}">
-      <strong style="font-size: 14px; color: ${this.nodeColors[node.type] || '#888888'}">${node.name}</strong><br/>
-      <span style="color: #ccc">Type: ${node.type}</span>
-      ${node.category ? `<br/><span style="color: #aaa">Category: ${node.category}</span>` : ''}
+        const sprite = new SpriteText(node.name);
+        sprite.material.depthWrite = false;
+        sprite.color = this.nodeColors[node.type] || '#888888';
+        sprite.textHeight = 3;
+        sprite.backgroundColor = '#000000';
+        sprite.backgroundOpacity = 0.6;
+        sprite.padding = 2;
+        sprite.borderRadius = 2;
+        sprite.position.y = 8;
+        
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true)
       
-      <!-- Title显示区域 -->
-      ${node.titles && node.titles.length > 0 ? `
-        <div style="margin-top: 8px;">
-          <strong style="color: #ffcc00; display: block; margin-bottom: 4px;">📚 Related Literature</strong>
-          <div id="${tooltipId}-titles">
-            ${node.titles.slice(0, 2).map(title => `
-              <div style="color: #ffdd99; margin: 2px 0; font-size: 11px;">• ${this.truncateText(title, 60)}</div>
-            `).join('')}
-            ${node.titles.length > 2 ? `
-              <div style="color: #ccc; cursor: pointer; font-size: 11px; margin-top: 4px;" 
-                   onclick="kg.toggleMoreContent('${tooltipId}-titles', ${node.titles.length})">
-                📖 and ${node.titles.length - 2} more titles...
+      .nodeLabel(node => {
+        const tooltipId = `tooltip-${node.id}`;
+        
+        return `
+          <div style="background: rgba(0,0,0,0.95); color: white; padding: 12px; border-radius: 6px; font-size: 12px; max-width: 450px; border: 2px solid ${this.nodeColors[node.type] || '#888888'}">
+            <strong style="font-size: 14px; color: ${this.nodeColors[node.type] || '#888888'}">${node.name}</strong><br/>
+            <span style="color: #ccc">Type: ${node.type}</span>
+            ${node.category ? `<br/><span style="color: #aaa">Category: ${node.category}</span>` : ''}
+            
+            ${node.titles && node.titles.length > 0 ? `
+              <div style="margin-top: 8px;">
+                <strong style="color: #ffcc00; display: block; margin-bottom: 4px;">📚 Related Literature</strong>
+                <div id="${tooltipId}-titles">
+                  ${node.titles.slice(0, 2).map(title => `
+                    <div style="color: #ffdd99; margin: 2px 0; font-size: 11px;">• ${this.truncateText(title, 60)}</div>
+                  `).join('')}
+                  ${node.titles.length > 2 ? `
+                    <div style="color: #ccc; cursor: pointer; font-size: 11px; margin-top: 4px;" 
+                         onclick="kg.toggleMoreContent('${tooltipId}-titles', ${node.titles.length})">
+                      📖 and ${node.titles.length - 2} more titles...
+                    </div>
+                  ` : ''}
+                </div>
               </div>
-              <div id="${tooltipId}-titles-full" style="display: none;">
-                ${node.titles.map(title => `
-                  <div style="color: #ffdd99; margin: 2px 0; font-size: 11px;">• ${this.truncateText(title, 60)}</div>
-                `).join('')}
+            ` : ''}
+            
+            ${node.dois && node.dois.length > 0 ? `
+              <div style="margin-top: 8px;">
+                <strong style="color: #99ccff; display: block; margin-bottom: 4px;">🔗 Related DOIs</strong>
+                <div id="${tooltipId}-dois">
+                  ${node.dois.slice(0, 2).map(doi => `
+                    <div style="color: #99ccff; margin: 2px 0; font-size: 10px; font-family: monospace;">• ${this.truncateText(doi, 50)}</div>
+                  `).join('')}
+                  ${node.dois.length > 2 ? `
+                    <div style="color: #ccc; cursor: pointer; font-size: 11px; margin-top: 4px;" 
+                         onclick="kg.toggleMoreContent('${tooltipId}-dois', ${node.dois.length})">
+                      📄 and ${node.dois.length - 2} more DOIs...
+                    </div>
+                  ` : ''}
+                </div>
               </div>
             ` : ''}
           </div>
-        </div>
-      ` : ''}
+        `;
+      })
       
-      <!-- DOI显示区域 -->
-      ${node.dois && node.dois.length > 0 ? `
-        <div style="margin-top: 8px;">
-          <strong style="color: #99ccff; display: block; margin-bottom: 4px;">🔗 Related DOIs</strong>
-          <div id="${tooltipId}-dois">
-            ${node.dois.slice(0, 2).map(doi => `
-              <div style="color: #99ccff; margin: 2px 0; font-size: 10px; font-family: monospace;">• ${this.truncateText(doi, 50)}</div>
-            `).join('')}
-            ${node.dois.length > 2 ? `
-              <div style="color: #ccc; cursor: pointer; font-size: 11px; margin-top: 4px;" 
-                   onclick="kg.toggleMoreContent('${tooltipId}-dois', ${node.dois.length})">
-                📄 and ${node.dois.length - 2} more DOIs...
-              </div>
-              <div id="${tooltipId}-dois-full" style="display: none;">
-                ${node.dois.map(doi => `
-                  <div style="color: #99ccff; margin: 2px 0; font-size: 10px; font-family: monospace;">• ${this.truncateText(doi, 50)}</div>
-                `).join('')}
-              </div>
-            ` : ''}
+      // 使用链接标签替代 Three.js 精灵文字
+      .linkLabel(link => {
+        const relationText = link.relation || 'related';
+        return `
+          <div style="background: rgba(0,0,0,0.8); color: lightgrey; padding: 6px 10px; border-radius: 4px; font-size: 11px; border: 1px solid rgba(255,255,255,0.3)">
+            ${relationText}
           </div>
-        </div>
-      ` : ''}
-    </div>
-  `;
-})
+        `;
+      })
+      
+      // 其他链接配置
+      .linkColor(() => 'rgba(200,200,200,0.6)')
+      .linkWidth(0.7)
+      .linkDirectionalParticles(1)
+      .linkDirectionalParticleSpeed(0.003)
+      .linkDirectionalParticleWidth(0.7)
+      
+      .onNodeHover(node => {
 
-.linkColor(() => 'rgba(200,200,200,0.6)')
-.linkWidth(0.7)
-.linkDirectionalParticles(1)
-.linkDirectionalParticleSpeed(0.003)
-.linkDirectionalParticleWidth(0.7)
-.onNodeHover(node => {
-  if (node) {
-    this.highlightRelatedNodes(node.id);
-  } else {
-    this.resetHighlight();
-    this.resetTooltipContent(); // 添加这行
+        // 如果有固定工具提示，不处理悬停事件
+        if (this.isTooltipPinned) {
+        return;
+        }
+
+
+        if (node) {
+          this.highlightRelatedNodes(node.id);
+        } else {
+          this.resetHighlight();
+          this.resetTooltipContent();
+        }
+      })
+      .onNodeClick(node => {
+        // 切换固定工具提示
+        this.togglePinnedTooltip(node);
+        this.toggleNodeSelection(node);
+      });
+
+    this.graph
+      .d3Force('charge')
+      .strength(-260)
+      .distanceMax(1000);
+
+    this.graph
+      .d3Force('link')
+      .distance(100)
+      .strength(0.2);
+
+    console.log('图谱初始化完成，节点数量:', this.nodes.length);
+
+  } catch (error) {
+    this.showError('3D图形初始化失败: ' + error.message);
+    console.error('图形初始化错误:', error);
   }
-})
-.onNodeClick(node => {
-  this.toggleNodeSelection(node);
-});
-
-this.graph
-  .d3Force('charge')
-  .strength(-260)
-  .distanceMax(1000);
-
-this.graph
-  .d3Force('link')
-  .distance(100)
-  .strength(0.2);
-
-} catch (error) {
-  this.showError('3D图形初始化失败: ' + error.message);
-  console.error('图形初始化错误:', error);
 }
-      
-}
+
 
 // 在这里添加辅助方法
 truncateText(text, maxLength) {
   if (text.length <= maxLength) return text;
   return text.substring(0, maxLength) + '...';
 }
+
+
+// === 新增的固定工具提示方法 ===
+
+// 新增：切换固定工具提示
+togglePinnedTooltip(node) {
+  if (this.pinnedTooltip && this.pinnedTooltip.id === node.id) {
+    // 如果点击的是已固定的节点，取消固定
+    this.unpinTooltip();
+  } else {
+    // 固定新的工具提示
+    this.pinTooltip(node);
+  }
+}
+
+// 修改：固定工具提示
+pinTooltip(node) {
+  this.pinnedTooltip = node;
+  this.isTooltipPinned = true;
+  
+  // 创建固定的工具提示元素
+  this.createPinnedTooltipElement(node);
+  
+  // 高亮相关节点
+  this.highlightRelatedNodes(node.id);
+}
+
+// 修改：取消固定工具提示
+unpinTooltip() {
+  this.pinnedTooltip = null;
+  this.isTooltipPinned = false;
+  
+  // 移除固定的工具提示元素
+  this.removePinnedTooltipElement();
+  
+  // 重置图谱状态
+  this.resetGraphState();
+}
+
+
+// 新增：重置图谱状态
+resetGraphState() {
+  if (this.graph) {
+    // 重置悬停状态
+    this.graph.onNodeHover(null);
+    // 重置高亮
+    this.resetHighlight();
+    // 重置节点颜色
+    this.graph.nodeColor(node => this.nodeColors[node.type] || '#888888');
+    // 重置链接颜色
+    this.graph.linkColor(() => 'rgba(200,200,200,0.6)');
+  }
+}
+
+
+// 新增：创建固定的工具提示元素
+createPinnedTooltipElement(node) {
+  // 先移除可能已存在的固定工具提示
+  this.removePinnedTooltipElement();
+  
+  // 创建固定工具提示容器
+  const pinnedTooltip = document.createElement('div');
+  pinnedTooltip.id = 'pinned-tooltip';
+  pinnedTooltip.style.cssText = `
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.95);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 3px solid ${this.nodeColors[node.type] || '#888888'};
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  `;
+  
+  // 添加关闭按钮
+  pinnedTooltip.innerHTML = `
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <strong style="font-size: 16px; color: ${this.nodeColors[node.type] || '#888888'}">📌 Pinned: ${node.name}</strong>
+      <button onclick="kg.unpinTooltip()" style="
+        background: #f44336;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 8px;
+        cursor: pointer;
+        font-size: 12px;
+      ">✕ Close</button>
+    </div>
+    <div style="color: #ccc; margin-bottom: 8px;">Type: ${node.type}</div>
+    ${node.category ? `<div style="color: #aaa; margin-bottom: 8px;">Category: ${node.category}</div>` : ''}
+    
+    ${node.titles && node.titles.length > 0 ? `
+      <div style="margin-top: 12px;">
+        <strong style="color: #ffcc00; display: block; margin-bottom: 6px;">📚 Related Literature</strong>
+        <div>
+          ${node.titles.map(title => `
+            <div style="color: #ffdd99; margin: 4px 0; font-size: 12px; padding: 4px; background: rgba(255,204,0,0.1); border-radius: 3px;">• ${this.truncateText(title, 80)}</div>
+          `).join('')}
+        </div>
+      </div>
+    ` : ''}
+    
+    ${node.dois && node.dois.length > 0 ? `
+      <div style="margin-top: 12px;">
+        <strong style="color: #99ccff; display: block; margin-bottom: 6px;">🔗 Related DOIs</strong>
+        <div>
+          ${node.dois.map(doi => `
+            <div style="color: #99ccff; margin: 4px 0; font-size: 11px; font-family: monospace; padding: 4px; background: rgba(153,204,255,0.1); border-radius: 3px;">• ${this.truncateText(doi, 60)}</div>
+          `).join('')}
+        </div>
+      </div>
+    ` : ''}
+  `;
+  
+  document.body.appendChild(pinnedTooltip);
+}
+
+// 新增：移除固定的工具提示元素
+removePinnedTooltipElement() {
+  const existingTooltip = document.getElementById('pinned-tooltip');
+  if (existingTooltip) {
+    existingTooltip.remove();
+  }
+}
+
 
 // 切换显示更多内容
 toggleMoreContent(elementId, totalCount) {
@@ -1029,6 +1186,13 @@ toggleMoreContent(elementId, totalCount) {
 
 // 点击节点外部时关闭所有展开的内容
 resetTooltipContent() {
+    // 如果工具提示是固定的，不要重置
+  if (this.isTooltipPinned) {
+    return;
+  }
+  
+
+
   // 隐藏所有展开的内容
   document.querySelectorAll('[id$="-full"]').forEach(element => {
     element.style.display = 'none';
@@ -1420,10 +1584,13 @@ resetTooltipContent() {
       }
 
       reset() {
-        this.selectedNodes.clear();
-        this.selectedCategories.clear();
-        this.availableNodesByType = {};
-        this.currentFilterIndex = 0;
+      this.selectedNodes.clear();
+      this.selectedCategories.clear();
+      this.availableNodesByType = {};
+      this.currentFilterIndex = 0;
+  
+  // 取消固定工具提示
+  this.unpinTooltip();
         
         this.filterOrder.forEach(type => {
           const nodesOfType = this.nodes.filter(n => n.type === type);
@@ -1434,6 +1601,9 @@ resetTooltipContent() {
         
         this.createCascadingFiltersWithCategories();
         this.showAllNodes();
+
+        // 确保图谱状态完全重置
+        this.resetGraphState();
       }
 
       centerView() {
