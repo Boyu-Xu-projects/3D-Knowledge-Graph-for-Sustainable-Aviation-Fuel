@@ -4,7 +4,7 @@ import json
 import os
 
 # ========= 配置 =========
-input_path = r"C:\Users\xuboy\saf_llm_ner_project\KG-data\0927-single-reaction-kg.xlsx"
+input_path = r"C:\Users\xuboy\saf_llm_ner_project\KG-data\final-single-reaction-kg.xlsx"
 output_dir = r"C:\Users\xuboy\saf_llm_ner_project\KG-data\kg_output"
 sheet = 0   # 默认第一个工作表
 # ======================
