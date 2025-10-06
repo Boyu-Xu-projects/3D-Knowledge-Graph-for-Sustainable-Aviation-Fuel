@@ -4,15 +4,15 @@ import json
 import os
 
 # ========= 配置 =========
-input_path = r"C:\Users\xuboy\saf_llm_ner_project\KG-data\final-single-reaction-kg.xlsx"
+input_path = r"C:\Users\xuboy\saf_llm_ner_project\KG-data\reaction modes-kg.xlsx"
 output_dir = r"C:\Users\xuboy\saf_llm_ner_project\KG-data\kg_output"
 sheet = 0   # 默认第一个工作表
 # ======================
 
 # 你定义的边规则（列名必须和 Excel 表头完全一致）
 link_rules = [
-    ("Year", "A reaction type"),
-    ("A reaction type", "Feedstock"),
+    ("Year", "Reaction mode(s)"),
+    ("Reaction mode(s)", "Feedstock"),
     ("Feedstock", "Operation mode"),
     ("Operation mode", "Catalyst"),
     ("Catalyst", "Product"),

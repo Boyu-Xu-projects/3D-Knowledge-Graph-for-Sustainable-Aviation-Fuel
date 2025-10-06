@@ -645,7 +645,7 @@ function initializeGraph() {
 
       setupFilterOrder() {
         const allTypes = [
-          "A reaction type",
+          "Reaction mode(s)",
           "Year", 
           "Feedstock",
           "Operation mode",
@@ -749,7 +749,7 @@ function initializeGraph() {
         let id = 0;
 
         const typeExamples = {
-          "A reaction type": ["Hydrogenation", "Oxidation", "Cracking", "Polymerization", "Esterification"],
+          "Reaction mode(s)": ["Hydrogenation", "Oxidation", "Cracking", "Polymerization", "Esterification"],
           "Year": ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
           "Feedstock": [
             {name: "Methane", category: "Gaseous"},
@@ -803,7 +803,7 @@ function initializeGraph() {
           });
         });
 
-        const reactionTypeNodes = nodes.filter(n => n.type === "A reaction type");
+        const reactionTypeNodes = nodes.filter(n => n.type === "Reaction mode(s)");
         
         reactionTypeNodes.forEach(reactionNode => {
           const reactionName = reactionNode.name.toLowerCase();
@@ -851,7 +851,7 @@ function initializeGraph() {
 
       setupNodeColors() {
         const typeColorMap = {
-          'A reaction type': '#ff4444',
+          'Reaction mode(s)': '#ff4444',
           'Year': '#44ff44', 
           'Feedstock': '#4444ff',
           'Operation mode': '#ffff44',
