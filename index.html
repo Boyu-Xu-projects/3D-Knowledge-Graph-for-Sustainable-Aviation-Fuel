@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>3D Knowledge Graph for Sustainable Aviation Fuel</title>
+<title>Knowledge Graphs for Sustainable Aviation Fuel</title>
 <style>
 
 /* 新增：密码验证界面样式 */
@@ -12,7 +12,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #000011 0%, #1a1a2e 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
   background: rgba(255, 255, 255, 0.95);
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
   text-align: center;
   width: 350px;
   max-width: 90%;
@@ -43,14 +43,14 @@
     left:10px;
     background:rgba(255,255,255,0.95);
     border:1px solid #ccc;
-    padding:15px;
+    padding:12px;
     border-radius:8px;
-    font-size:14px;
+    font-size:12px;
     max-height:90%;
     overflow:auto;
     z-index:10;
     width:350px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
   }
   #graph-container {
     position: absolute;
@@ -58,10 +58,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000011;
+    background: #ffffff;
   }
   .filter-section { 
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
@@ -251,7 +251,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #000011 0%, #1a1a2e 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,7 +269,7 @@
   ">
     <h2 style="color: #333; margin-bottom: 10px;">🔒 Access restricted</h2>
     <p style="color: #666; margin-bottom: 25px; font-size: 14px;">
-      Please enter a password to access the 3D Knowledge Graph for Sustainable Aviation Fuel
+      Please enter a password to access the Knowledge Graphs for Sustainable Aviation Fuel
     </p>
     <input 
       type="password" 
@@ -315,7 +315,7 @@
 
 
 <div id="controls">
-  <h3 style="text-align: center; margin-bottom: 20px; color: #333;">3D Knowledge Graph for Sustainable Aviation Fuel</h3>
+  <h3 style="text-align: center; margin-bottom: 20px; color: #333;">Knowledge Graphs for Sustainable Aviation Fuel</h3>
   <div id="filters-container"></div>
   <div class="button-group">
     <button id="search-btn">🔍 Search Nodes</button>
@@ -323,7 +323,7 @@
     <button id="center-btn">🎯 Center View</button>
   </div>
 </div>
-<div id="loading">Loading 3D Graph...</div>
+<div id="loading">Loading Graph...</div>
 <div id="graph-container"></div>
 
 <!-- 引入必要的库 -->
@@ -645,10 +645,12 @@ function initializeGraph() {
 
       setupFilterOrder() {
         const allTypes = [
-          "Reaction mode(s)",
-          "Year", 
+          "Feedstock category",
+          "Catalyst category",
+          "Product category",
+          "Reaction mode",
+          "Year",
           "Feedstock",
-          "Operation mode",
           "Catalyst",
           "Product",
           "Product selectivity",
@@ -707,6 +709,9 @@ function initializeGraph() {
           }
           
           this.currentFilterIndex = Math.max(0, lastSelectedIndex);
+
+        
+
           
           for (let i = this.currentFilterIndex + 1; i < this.filterOrder.length; i++) {
             const type = this.filterOrder[i];
@@ -749,7 +754,7 @@ function initializeGraph() {
         let id = 0;
 
         const typeExamples = {
-          "Reaction mode(s)": ["Hydrogenation", "Oxidation", "Cracking", "Polymerization", "Esterification"],
+          "Reaction mode": ["Hydrogenation", "Oxidation", "Cracking", "Polymerization", "Esterification"],
           "Year": ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
           "Feedstock": [
             {name: "Methane", category: "Gaseous"},
@@ -759,7 +764,6 @@ function initializeGraph() {
             {name: "Benzene", category: "Liquid"},
             {name: "Toluene", category: "Liquid"}
           ],
-          "Operation mode": ["Batch", "Continuous", "Semi-batch", "Fixed-bed", "Fluidized-bed"],
           "Catalyst": [
             {name: "Ni Catalyst", category: "Metal"},
             {name: "Pd Catalyst", category: "Metal"},
@@ -803,7 +807,7 @@ function initializeGraph() {
           });
         });
 
-        const reactionTypeNodes = nodes.filter(n => n.type === "Reaction mode(s)");
+        const reactionTypeNodes = nodes.filter(n => n.type === "Reaction mode");
         
         reactionTypeNodes.forEach(reactionNode => {
           const reactionName = reactionNode.name.toLowerCase();
@@ -851,13 +855,15 @@ function initializeGraph() {
 
       setupNodeColors() {
         const typeColorMap = {
-          'Reaction mode(s)': '#ff4444',
+          'Reaction mode': '#ff4444',
           'Year': '#44ff44', 
-          'Feedstock': '#4444ff',
-          'Operation mode': '#ffff44',
-          'Catalyst': '#ff44ff',
-          'Product': '#44ffff',
-          'Product selectivity': '#ff8844',
+          'Feedstock': '#1f77b4',
+          'Feedstock category': '#1f77b4',
+          'Catalyst': '#ff7f0e',
+          'Catalyst category': '#ff7f0e',
+          'Product': '#e377c2',
+          'Product category': '#e377c2',
+          'Product selectivity': '#2ca02c',
           'Product yield': '#8844ff',
           'Atmosphere': '#88ff44',
           'Reactant molar ratio': '#ff4488',
@@ -892,9 +898,11 @@ function initializeGraph() {
       .width(window.innerWidth)
       .height(window.innerHeight)
       .graphData(this.graphData)
+      .backgroundColor('#ffffff') // 添加这一行，设置背景色为白色
+
       .nodeColor(node => this.nodeColors[node.type] || '#888888')
-      .nodeRelSize(2)
-      .nodeResolution(16)
+      .nodeRelSize(4)
+      .nodeResolution(20)
       .nodeOpacity(0.9)
       
       .nodeThreeObject(node => {
@@ -909,19 +917,73 @@ function initializeGraph() {
           );
           return nodeEl;
         }
-        
-        const sprite = new SpriteText(node.name);
-        sprite.material.depthWrite = false;
-        sprite.color = this.nodeColors[node.type] || '#888888';
-        sprite.textHeight = 3;
-        sprite.backgroundColor = '#000000';
-        sprite.backgroundOpacity = 0.6;
-        sprite.padding = 2;
-        sprite.borderRadius = 2;
-        sprite.position.y = 8;
-        
-        return sprite;
-      })
+
+          // 智能换行处理
+  const processName = (name) => {
+    const maxCharsPerLine = 18; // 每行最多18个字符
+    
+    if (name.length <= maxCharsPerLine) {
+      return name;
+    }
+    
+    const words = name.split(' ');
+    let lines = [];
+    let currentLine = '';
+    
+    for (let i = 0; i < words.length; i++) {
+      const word = words[i];
+      
+      if (currentLine === '') {
+        currentLine = word;
+      } else if (currentLine.length + word.length + 1 <= maxCharsPerLine) {
+        currentLine += ' ' + word;
+      } else {
+        lines.push(currentLine);
+        currentLine = word;
+      }
+    }
+    
+    if (currentLine !== '') {
+      lines.push(currentLine);
+    }
+    
+    // 防止单行过长
+    if (lines.length === 1 && lines[0].length > maxCharsPerLine) {
+      const firstLine = lines[0].substring(0, maxCharsPerLine);
+      const secondLine = lines[0].substring(maxCharsPerLine);
+      lines = [firstLine, secondLine];
+    }
+    
+    return lines.join('\n');
+  };
+
+  const displayName = processName(node.name);
+  const sprite = new SpriteText(displayName);
+  sprite.material.depthWrite = false;
+  sprite.color = this.nodeColors[node.type] || '#888888';
+  
+  // 所有标签字体大小一致
+  sprite.textHeight = 10; // 固定字体大小
+  
+  sprite.backgroundColor = 'transparent';
+  sprite.backgroundOpacity = 0;
+  sprite.padding = 3;
+  sprite.borderRadius = 2;
+  sprite.maxWidth = 90; // 更宽的显示区域
+  sprite.textAlign = 'center';
+  
+  // 根据行数调整垂直位置，但字体大小不变
+  const lineCount = displayName.split('\n').length;
+  if (lineCount === 1) {
+    sprite.position.y = 18;
+  } else if (lineCount === 2) {
+    sprite.position.y = 22;
+  } else {
+    sprite.position.y = 26;
+  }
+  
+  return sprite;
+})
       .nodeThreeObjectExtend(true)
       
       .nodeLabel(node => {
@@ -974,19 +1036,18 @@ function initializeGraph() {
       .linkLabel(link => {
         const relationText = link.relation || 'related';
         return `
-          <div style="background: rgba(0,0,0,0.8); color: lightgrey; padding: 6px 10px; border-radius: 4px; font-size: 11px; border: 1px solid rgba(255,255,255,0.3)">
+          <div style="background: transparent; color: #333; padding: 4px 8px; border-radius: 3px; font-size: 11px;">
             ${relationText}
           </div>
         `;
       })
       
       // 其他链接配置
-      .linkColor(() => 'rgba(200,200,200,0.6)')
-      .linkWidth(0.7)
-      .linkDirectionalParticles(1)
-      .linkDirectionalParticleSpeed(0.003)
-      .linkDirectionalParticleWidth(0.7)
-      
+      .linkColor(() => 'rgba(80,80,80,0.8)') // 改为深灰色
+      .linkWidth(2.0) // 增加链接宽度
+      .linkDirectionalParticles(2) // 增加粒子数量
+      .linkDirectionalParticleSpeed(0.005) // 增加粒子速度
+      .linkDirectionalParticleWidth(1.5) // 增加粒子宽度
       .onNodeHover(node => {
 
         // 如果有固定工具提示，不处理悬停事件
@@ -1006,17 +1067,38 @@ function initializeGraph() {
         // 切换固定工具提示
         this.togglePinnedTooltip(node);
         this.toggleNodeSelection(node);
+      })
+
+      // 新增：右键拖拽固定节点
+      .onNodeDragEnd(node => {
+        // 当用户拖拽节点后，固定节点位置
+        node.fx = node.x;
+        node.fy = node.y;
+        node.fz = node.z;
+        console.log(`节点 "${node.name}" 已被固定在位置 (${node.x.toFixed(2)}, ${node.y.toFixed(2)}, ${node.z.toFixed(2)})`);
+      })
+      
+      // 新增：右键点击释放节点
+      .onNodeRightClick(node => {
+        // 释放节点
+        node.fx = undefined;
+        node.fy = undefined;
+        node.fz = undefined;
+        console.log(`节点 "${node.name}" 已被释放`);
+// 刷新图谱
+        this.graph.refresh();
       });
+
 
     this.graph
       .d3Force('charge')
-      .strength(-260)
+      .strength(-200)
       .distanceMax(1000);
 
     this.graph
       .d3Force('link')
-      .distance(100)
-      .strength(0.2);
+      .distance(300)
+      .strength(0.15);
 
     console.log('图谱初始化完成，节点数量:', this.nodes.length);
 
