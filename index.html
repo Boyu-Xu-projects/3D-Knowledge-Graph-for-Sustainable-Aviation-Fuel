@@ -645,9 +645,6 @@ function initializeGraph() {
 
       setupFilterOrder() {
         const allTypes = [
-          "Feedstock category",
-          "Catalyst category",
-          "Product category",
           "Reaction mode",
           "Year",
           "Feedstock",
@@ -662,7 +659,10 @@ function initializeGraph() {
           "Reaction temperature",
           "Reaction pressure", 
           "Solvent", 
-          "Conversion rate"
+          "Conversion rate",
+          "Feedstock category",
+          "Catalyst category",
+          "Product category"
         ];
         
         const existingTypes = new Set(this.nodes.map(n => n.type));

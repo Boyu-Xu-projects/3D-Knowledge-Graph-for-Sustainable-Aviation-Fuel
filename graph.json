@@ -27773,6 +27773,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 723,
+      "target": 3,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 724,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -27846,6 +27851,11 @@
       "source": 6,
       "target": 728,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 728,
+      "target": 8,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -27923,6 +27933,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 12,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -27996,6 +28011,11 @@
       "source": 16,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 18,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -28073,6 +28093,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 758,
+      "target": 23,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -28146,6 +28171,11 @@
       "source": 27,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 28,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -28223,6 +28253,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 33,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -28296,6 +28331,11 @@
       "source": 37,
       "target": 781,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 781,
+      "target": 39,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -28373,6 +28413,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 787,
+      "target": 44,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -28446,6 +28491,11 @@
       "source": 48,
       "target": 794,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 794,
+      "target": 49,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -28523,6 +28573,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 802,
+      "target": 53,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -28596,6 +28651,11 @@
       "source": 57,
       "target": 809,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 809,
+      "target": 59,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 803,
@@ -28673,6 +28733,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 816,
+      "target": 61,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 817,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -28746,6 +28811,11 @@
       "source": 6,
       "target": 822,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 822,
+      "target": 64,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -28823,6 +28893,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 828,
+      "target": 68,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -28896,6 +28971,11 @@
       "source": 70,
       "target": 833,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 833,
+      "target": 71,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 803,
@@ -28973,6 +29053,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 74,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -29046,6 +29131,11 @@
       "source": 67,
       "target": 844,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 844,
+      "target": 76,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -29123,6 +29213,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 850,
+      "target": 81,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 724,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -29196,6 +29291,11 @@
       "source": 85,
       "target": 854,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 854,
+      "target": 86,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -29273,6 +29373,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 860,
+      "target": 90,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -29346,6 +29451,11 @@
       "source": 93,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 95,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -29423,6 +29533,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 870,
+      "target": 96,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 871,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -29496,6 +29611,11 @@
       "source": 98,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 100,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 879,
@@ -29573,6 +29693,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 885,
+      "target": 105,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -29646,6 +29771,11 @@
       "source": 108,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 109,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -29723,6 +29853,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 895,
+      "target": 113,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -29796,6 +29931,11 @@
       "source": 6,
       "target": 897,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 897,
+      "target": 76,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -29873,6 +30013,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 905,
+      "target": 117,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -29946,6 +30091,11 @@
       "source": 42,
       "target": 909,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 909,
+      "target": 120,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -30023,6 +30173,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 915,
+      "target": 126,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -30096,6 +30251,11 @@
       "source": 130,
       "target": 919,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 919,
+      "target": 131,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -30173,6 +30333,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 135,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 925,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -30246,6 +30411,11 @@
       "source": 136,
       "target": 931,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 931,
+      "target": 137,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -30323,6 +30493,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 141,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 939,
       "relation": "Year->Reaction mode"
@@ -30396,6 +30571,11 @@
       "source": 130,
       "target": 946,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 946,
+      "target": 145,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 947,
@@ -30473,6 +30653,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 953,
+      "target": 149,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -30546,6 +30731,11 @@
       "source": 153,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 154,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -30623,6 +30813,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 787,
+      "target": 159,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -30696,6 +30891,11 @@
       "source": 6,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 161,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -30773,6 +30973,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 162,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -30846,6 +31051,11 @@
       "source": 165,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 167,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -30923,6 +31133,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 171,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -30996,6 +31211,11 @@
       "source": 174,
       "target": 985,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 985,
+      "target": 175,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -31073,6 +31293,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 989,
+      "target": 178,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -31146,6 +31371,11 @@
       "source": 130,
       "target": 994,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 994,
+      "target": 181,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -31223,6 +31453,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 183,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -31296,6 +31531,11 @@
       "source": 185,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 186,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -31373,6 +31613,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1005,
+      "target": 189,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -31446,6 +31691,11 @@
       "source": 191,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 192,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -31523,6 +31773,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1014,
+      "target": 195,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 724,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -31596,6 +31851,11 @@
       "source": 196,
       "target": 1018,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1018,
+      "target": 197,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -31673,6 +31933,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 897,
+      "target": 199,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -31746,6 +32011,11 @@
       "source": 70,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 201,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -31823,6 +32093,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1029,
+      "target": 203,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -31896,6 +32171,11 @@
       "source": 31,
       "target": 1032,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1032,
+      "target": 206,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -31973,6 +32253,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1037,
+      "target": 210,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -32046,6 +32331,11 @@
       "source": 6,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 213,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 1041,
@@ -32123,6 +32413,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1045,
+      "target": 217,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -32196,6 +32491,11 @@
       "source": 220,
       "target": 1051,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1051,
+      "target": 221,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -32273,6 +32573,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1059,
+      "target": 225,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -32346,6 +32651,11 @@
       "source": 228,
       "target": 1066,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1066,
+      "target": 229,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -32423,6 +32733,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 234,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -32496,6 +32811,11 @@
       "source": 236,
       "target": 1072,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1072,
+      "target": 238,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -32573,6 +32893,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1077,
+      "target": 241,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -32646,6 +32971,11 @@
       "source": 233,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 244,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -32723,6 +33053,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1087,
+      "target": 247,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 939,
       "relation": "Year->Reaction mode"
@@ -32796,6 +33131,11 @@
       "source": 249,
       "target": 1095,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1095,
+      "target": 251,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -32873,6 +33213,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1100,
+      "target": 254,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -32946,6 +33291,11 @@
       "source": 256,
       "target": 1103,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1103,
+      "target": 257,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -33023,6 +33373,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 259,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -33096,6 +33451,11 @@
       "source": 70,
       "target": 1111,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1111,
+      "target": 262,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -33173,6 +33533,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 264,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -33246,6 +33611,11 @@
       "source": 266,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 267,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -33323,6 +33693,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1121,
+      "target": 270,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -33396,6 +33771,11 @@
       "source": 271,
       "target": 1126,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1126,
+      "target": 272,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -33473,6 +33853,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1132,
+      "target": 275,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 724,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -33546,6 +33931,11 @@
       "source": 276,
       "target": 1136,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1136,
+      "target": 277,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 1137,
@@ -33623,6 +34013,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1143,
+      "target": 281,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -33696,6 +34091,11 @@
       "source": 220,
       "target": 1148,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1148,
+      "target": 283,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -33773,6 +34173,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 286,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -33846,6 +34251,11 @@
       "source": 263,
       "target": 1158,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1158,
+      "target": 287,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -33923,6 +34333,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1163,
+      "target": 290,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -33996,6 +34411,11 @@
       "source": 67,
       "target": 1168,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1168,
+      "target": 291,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -34073,6 +34493,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1172,
+      "target": 294,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -34146,6 +34571,11 @@
       "source": 296,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 297,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -34223,6 +34653,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 299,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -34296,6 +34731,11 @@
       "source": 111,
       "target": 1182,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1182,
+      "target": 301,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -34373,6 +34813,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 304,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -34446,6 +34891,11 @@
       "source": 307,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 309,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -34523,6 +34973,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1193,
+      "target": 312,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -34596,6 +35051,11 @@
       "source": 313,
       "target": 1197,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1197,
+      "target": 314,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 879,
@@ -34673,6 +35133,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 317,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -34746,6 +35211,11 @@
       "source": 320,
       "target": 1204,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1204,
+      "target": 321,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 803,
@@ -34823,6 +35293,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 324,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -34896,6 +35371,11 @@
       "source": 293,
       "target": 1211,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1211,
+      "target": 325,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -34973,6 +35453,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1215,
+      "target": 326,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -35046,6 +35531,11 @@
       "source": 327,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 329,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -35123,6 +35613,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1221,
+      "target": 331,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -35196,6 +35691,11 @@
       "source": 70,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 333,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 871,
@@ -35273,6 +35773,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 336,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -35346,6 +35851,11 @@
       "source": 338,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 262,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 871,
@@ -35423,6 +35933,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 341,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -35496,6 +36011,11 @@
       "source": 140,
       "target": 1232,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1232,
+      "target": 343,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -35573,6 +36093,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 345,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 817,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -35646,6 +36171,11 @@
       "source": 346,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 347,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -35723,6 +36253,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 348,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -35796,6 +36331,11 @@
       "source": 349,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 350,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -35873,6 +36413,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1249,
+      "target": 294,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -35946,6 +36491,11 @@
       "source": 140,
       "target": 1252,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1252,
+      "target": 356,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -36023,6 +36573,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 359,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 1255,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -36096,6 +36651,11 @@
       "source": 361,
       "target": 1262,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1262,
+      "target": 362,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 1263,
@@ -36173,6 +36733,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 364,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 1041,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -36246,6 +36811,11 @@
       "source": 293,
       "target": 1270,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1270,
+      "target": 366,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -36323,6 +36893,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1274,
+      "target": 369,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 817,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -36396,6 +36971,11 @@
       "source": 371,
       "target": 1279,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1279,
+      "target": 372,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -36473,6 +37053,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1287,
+      "target": 373,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 817,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -36546,6 +37131,11 @@
       "source": 274,
       "target": 1291,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1291,
+      "target": 376,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -36623,6 +37213,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1295,
+      "target": 381,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -36696,6 +37291,11 @@
       "source": 274,
       "target": 1301,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1301,
+      "target": 383,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -36773,6 +37373,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 386,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -36846,6 +37451,11 @@
       "source": 388,
       "target": 1309,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1309,
+      "target": 389,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -36923,6 +37533,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1314,
+      "target": 391,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -36996,6 +37611,11 @@
       "source": 274,
       "target": 1317,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1317,
+      "target": 393,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -37073,6 +37693,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1323,
+      "target": 396,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 1324,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -37146,6 +37771,11 @@
       "source": 398,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 399,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -37223,6 +37853,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1334,
+      "target": 401,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -37296,6 +37931,11 @@
       "source": 402,
       "target": 1338,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1338,
+      "target": 403,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -37373,6 +38013,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1343,
+      "target": 406,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -37446,6 +38091,11 @@
       "source": 408,
       "target": 1348,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1348,
+      "target": 409,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 1349,
@@ -37523,6 +38173,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1354,
+      "target": 411,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -37596,6 +38251,11 @@
       "source": 67,
       "target": 1358,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1358,
+      "target": 149,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -37673,6 +38333,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1362,
+      "target": 414,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 724,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -37746,6 +38411,11 @@
       "source": 415,
       "target": 1051,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1051,
+      "target": 416,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 803,
@@ -37823,6 +38493,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1368,
+      "target": 418,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -37896,6 +38571,11 @@
       "source": 420,
       "target": 1373,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1373,
+      "target": 421,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -37973,6 +38653,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1377,
+      "target": 423,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -38046,6 +38731,11 @@
       "source": 70,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 425,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -38123,6 +38813,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1384,
+      "target": 427,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -38196,6 +38891,11 @@
       "source": 293,
       "target": 1390,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1390,
+      "target": 429,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 879,
@@ -38273,6 +38973,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 432,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -38346,6 +39051,11 @@
       "source": 140,
       "target": 1398,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1398,
+      "target": 149,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 1399,
@@ -38423,6 +39133,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1402,
+      "target": 434,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 1137,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -38496,6 +39211,11 @@
       "source": 436,
       "target": 1408,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1408,
+      "target": 437,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -38573,6 +39293,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1411,
+      "target": 441,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -38646,6 +39371,11 @@
       "source": 443,
       "target": 1417,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1417,
+      "target": 444,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -38723,6 +39453,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1421,
+      "target": 446,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -38796,6 +39531,11 @@
       "source": 448,
       "target": 1424,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1424,
+      "target": 449,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 871,
@@ -38873,6 +39613,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1429,
+      "target": 452,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 1041,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -38946,6 +39691,11 @@
       "source": 453,
       "target": 1432,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1432,
+      "target": 454,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 879,
@@ -39023,6 +39773,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1436,
+      "target": 458,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -39096,6 +39851,11 @@
       "source": 10,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 460,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 879,
@@ -39173,6 +39933,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1059,
+      "target": 463,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -39246,6 +40011,11 @@
       "source": 457,
       "target": 1447,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1447,
+      "target": 464,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -39323,6 +40093,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 466,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 939,
       "relation": "Year->Reaction mode"
@@ -39396,6 +40171,11 @@
       "source": 253,
       "target": 1454,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1454,
+      "target": 469,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -39473,6 +40253,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1459,
+      "target": 471,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -39546,6 +40331,11 @@
       "source": 462,
       "target": 1461,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1461,
+      "target": 473,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 1255,
@@ -39623,6 +40413,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1467,
+      "target": 477,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 817,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -39696,6 +40491,11 @@
       "source": 479,
       "target": 1473,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1473,
+      "target": 350,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 871,
@@ -39773,6 +40573,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1476,
+      "target": 482,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 724,
       "target": 730,
       "relation": "Year->Reaction mode"
@@ -39846,6 +40651,11 @@
       "source": 484,
       "target": 1482,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1482,
+      "target": 485,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -39923,6 +40733,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1486,
+      "target": 487,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 1487,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -39996,6 +40811,11 @@
       "source": 490,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 491,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 817,
@@ -40073,6 +40893,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 452,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -40146,6 +40971,11 @@
       "source": 496,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 498,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -40223,6 +41053,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1496,
+      "target": 501,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -40296,6 +41131,11 @@
       "source": 502,
       "target": 1500,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1500,
+      "target": 504,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -40373,6 +41213,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1504,
+      "target": 508,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -40446,6 +41291,11 @@
       "source": 233,
       "target": 1507,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1507,
+      "target": 510,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -40523,6 +41373,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 514,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -40596,6 +41451,11 @@
       "source": 515,
       "target": 1511,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1511,
+      "target": 516,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -40673,6 +41533,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 262,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -40746,6 +41611,11 @@
       "source": 518,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 520,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -40823,6 +41693,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 524,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 939,
       "relation": "Year->Reaction mode"
@@ -40896,6 +41771,11 @@
       "source": 523,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 527,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -40973,6 +41853,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1526,
+      "target": 528,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -41046,6 +41931,11 @@
       "source": 57,
       "target": 1529,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1529,
+      "target": 529,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -41123,6 +42013,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 531,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -41196,6 +42091,11 @@
       "source": 534,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 536,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -41273,6 +42173,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1059,
+      "target": 539,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -41346,6 +42251,11 @@
       "source": 541,
       "target": 1544,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1544,
+      "target": 542,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -41423,6 +42333,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1548,
+      "target": 545,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -41496,6 +42411,11 @@
       "source": 70,
       "target": 1552,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1552,
+      "target": 547,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -41573,6 +42493,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 549,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -41646,6 +42571,11 @@
       "source": 415,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 551,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -41723,6 +42653,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 257,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 871,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -41796,6 +42731,11 @@
       "source": 57,
       "target": 1561,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1561,
+      "target": 554,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -41873,6 +42813,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1565,
+      "target": 558,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -41946,6 +42891,11 @@
       "source": 560,
       "target": 1567,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1567,
+      "target": 529,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -42023,6 +42973,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1570,
+      "target": 562,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -42096,6 +43051,11 @@
       "source": 556,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 565,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -42173,6 +43133,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 566,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -42246,6 +43211,11 @@
       "source": 568,
       "target": 1579,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1579,
+      "target": 570,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -42323,6 +43293,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 573,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -42396,6 +43371,11 @@
       "source": 575,
       "target": 739,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 739,
+      "target": 576,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 817,
@@ -42473,6 +43453,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 578,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -42546,6 +43531,11 @@
       "source": 233,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 580,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 871,
@@ -42623,6 +43613,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 582,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -42696,6 +43691,11 @@
       "source": 584,
       "target": 1594,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1594,
+      "target": 585,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -42773,6 +43773,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1599,
+      "target": 587,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -42846,6 +43851,11 @@
       "source": 220,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 591,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 879,
@@ -42923,6 +43933,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1604,
+      "target": 592,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -42996,6 +44011,11 @@
       "source": 311,
       "target": 1608,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1608,
+      "target": 593,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -43073,6 +44093,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1612,
+      "target": 595,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 879,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -43146,6 +44171,11 @@
       "source": 6,
       "target": 1617,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1617,
+      "target": 597,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -43223,6 +44253,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1620,
+      "target": 602,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -43296,6 +44331,11 @@
       "source": 233,
       "target": 1622,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1622,
+      "target": 604,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -43373,6 +44413,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 606,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -43446,6 +44491,11 @@
       "source": 607,
       "target": 1628,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1628,
+      "target": 608,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -43523,6 +44573,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1632,
+      "target": 611,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 711,
       "target": 759,
       "relation": "Year->Reaction mode"
@@ -43596,6 +44651,11 @@
       "source": 6,
       "target": 1635,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1635,
+      "target": 613,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 879,
@@ -43673,6 +44733,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 615,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 925,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -43746,6 +44811,11 @@
       "source": 618,
       "target": 1644,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1644,
+      "target": 619,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -43823,6 +44893,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 897,
+      "target": 622,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 925,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -43896,6 +44971,11 @@
       "source": 70,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 624,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 925,
@@ -43973,6 +45053,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 626,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 925,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -44046,6 +45131,11 @@
       "source": 70,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 627,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -44123,6 +45213,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1658,
+      "target": 149,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -44196,6 +45291,11 @@
       "source": 629,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 630,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -44273,6 +45373,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 749,
+      "target": 633,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -44346,6 +45451,11 @@
       "source": 415,
       "target": 1661,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1661,
+      "target": 634,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -44423,6 +45533,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1664,
+      "target": 636,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -44496,6 +45611,11 @@
       "source": 228,
       "target": 1668,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1668,
+      "target": 638,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -44573,6 +45693,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1672,
+      "target": 640,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -44646,6 +45771,11 @@
       "source": 642,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 643,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -44723,6 +45853,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1676,
+      "target": 645,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -44796,6 +45931,11 @@
       "source": 111,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 646,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -44873,6 +46013,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1682,
+      "target": 648,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -44946,6 +46091,11 @@
       "source": 650,
       "target": 1686,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1686,
+      "target": 651,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 729,
@@ -45023,6 +46173,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1689,
+      "target": 651,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 729,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -45096,6 +46251,11 @@
       "source": 656,
       "target": 1692,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1692,
+      "target": 651,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 817,
@@ -45173,6 +46333,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1696,
+      "target": 660,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 838,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -45246,6 +46411,11 @@
       "source": 21,
       "target": 1059,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1059,
+      "target": 662,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -45323,6 +46493,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 739,
+      "target": 663,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 871,
       "target": 818,
       "relation": "Year->Reaction mode"
@@ -45396,6 +46571,11 @@
       "source": 664,
       "target": 749,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 749,
+      "target": 627,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -45473,6 +46653,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1704,
+      "target": 666,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 740,
       "target": 712,
       "relation": "Year->Reaction mode"
@@ -45546,6 +46731,11 @@
       "source": 48,
       "target": 1708,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1708,
+      "target": 667,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 838,
@@ -45623,6 +46813,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1713,
+      "target": 669,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 1714,
       "relation": "Year->Reaction mode"
@@ -45696,6 +46891,11 @@
       "source": 672,
       "target": 1718,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1718,
+      "target": 674,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 938,
@@ -45773,6 +46973,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1722,
+      "target": 676,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 1714,
       "relation": "Year->Reaction mode"
@@ -45846,6 +47051,11 @@
       "source": 672,
       "target": 1726,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1726,
+      "target": 678,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -45923,6 +47133,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1729,
+      "target": 678,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 1714,
       "relation": "Year->Reaction mode"
@@ -45996,6 +47211,11 @@
       "source": 680,
       "target": 1732,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1732,
+      "target": 682,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 750,
@@ -46073,6 +47293,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1738,
+      "target": 685,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 750,
       "target": 1714,
       "relation": "Year->Reaction mode"
@@ -46146,6 +47371,11 @@
       "source": 687,
       "target": 1741,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1741,
+      "target": 689,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 724,
@@ -46223,6 +47453,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1746,
+      "target": 692,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 1714,
       "relation": "Year->Reaction mode"
@@ -46296,6 +47531,11 @@
       "source": 672,
       "target": 1751,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1751,
+      "target": 694,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -46373,6 +47613,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1755,
+      "target": 696,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 938,
       "target": 1714,
       "relation": "Year->Reaction mode"
@@ -46446,6 +47691,11 @@
       "source": 607,
       "target": 1759,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1759,
+      "target": 697,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 711,
@@ -46523,6 +47773,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1766,
+      "target": 699,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 724,
       "target": 1280,
       "relation": "Year->Reaction mode"
@@ -46596,6 +47851,11 @@
       "source": 233,
       "target": 1772,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1772,
+      "target": 701,
+      "relation": "Conversion rate->Catalyst"
     },
     {
       "source": 740,
@@ -46673,6 +47933,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1779,
+      "target": 703,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 803,
       "target": 1280,
       "relation": "Year->Reaction mode"
@@ -46748,6 +48013,11 @@
       "relation": "Feedstock->Conversion rate"
     },
     {
+      "source": 1784,
+      "target": 706,
+      "relation": "Conversion rate->Catalyst"
+    },
+    {
       "source": 871,
       "target": 1280,
       "relation": "Year->Reaction mode"
@@ -46821,6 +48091,11 @@
       "source": 708,
       "target": 1790,
       "relation": "Feedstock->Conversion rate"
+    },
+    {
+      "source": 1790,
+      "target": 709,
+      "relation": "Conversion rate->Catalyst"
     }
   ]
 }
